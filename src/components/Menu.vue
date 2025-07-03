@@ -4,11 +4,11 @@
 <template>
     <div id="navbar">
         <ul>
-            <li><a href=""><span class="material-icons">home</span></a></li>
-            <li><a href=""><span class="material-icons">person</span></a></li>
-            <li><a href=""><span class="material-icons">layers</span></a></li>
-            <li><a href=""><span class="material-icons">work</span></a></li>
-            <li><a href=""><span class="material-icons">alternate_email</span></a></li>
+            <li><a href="#home"><span class="material-icons">home</span></a></li>
+            <li><a href="#about"><span class="material-icons">person</span></a></li>
+            <li><a href="#tech-stack"><span class="material-icons">layers</span></a></li>
+            <li><a href="#portfolio-title"><span class="material-icons">work</span></a></li>
+            <li><a href="#contact"><span class="material-icons">alternate_email</span></a></li>
         </ul>
     </div>
 </template>
@@ -99,7 +99,7 @@
                 font-size: 3rem;
 
                 &:hover {
-                    color: var(--text-color) !important;
+                    background: var(--purple-color) !important;
                 }
             }
         }

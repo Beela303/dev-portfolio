@@ -17,8 +17,8 @@
 
   <div id="tech-stack">
     <h2>TECH STACK</h2>
+    <h3>FRONTEND</h3>
     <div class="stack">
-      <h3>FRONTEND</h3>
       <ul>
         <li><i class="devicon-html5-plain colored"></i>HTML</li>
         <li><i class="devicon-css3-plain colored"></i>CSS</li>
@@ -30,8 +30,8 @@
       </ul>
     </div>
 
+    <h3>BACKEND</h3>
     <div class="stack">
-      <h3>BACKEND</h3>
       <ul>
         <li><i class="devicon-django-plain colored"></i>Django</li>
         <li><i class="devicon-djangorest-plain colored"></i>Django Rest Framework</li>
@@ -40,16 +40,16 @@
       </ul>
     </div>
 
+    <h3>DEVOPS & INFRASTRUCTURE</h3>
     <div class="stack">
-      <h3>DEVOPS & INFRASTRUCTURE</h3>
       <ul>
         <li><i class="devicon-vercel-plain colored"></i>Vercel</li>
         <li><i class="devicon-cloudflare-plain colored"></i>Cloudflare</li>
       </ul>
     </div>
 
+    <h3>TOOLS & UTILITIES</h3>
     <div class="stack">
-      <h3>TOOLS & UTILITIES</h3>
       <ul>
         <li><i class="devicon-github-plain colored"></i>GitHUb</li>
         <li><i class="devicon-npm-original-wordmark colored"></i>NPM</li>
@@ -146,6 +146,17 @@
     </div>
 
   </div>
+
+  <div id="contact">
+    <h2>Contact Me</h2>
+    <p>E-Mail: <a href="mailto:nabilaabubakar333@gmail.com">nabilaabubakar333@gmail.com</a></p>
+
+    <h3>Socials:</h3>
+    <a href="http://github.com/beela303" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="http://linkedin.com/in/nabilaabubakar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="http://instagram.com/beela303" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="http://x.com/beela303" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -188,15 +199,17 @@
     text-align: center;
   }
 
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
   .stack {
     margin: 30px;
 
     column-count: 2;
     column-width: 50%;
 
-    h3 {
-      font-size: 2rem;
-    }
 
     ul {
 
@@ -314,7 +327,37 @@
   }
 }
 
+#contact {
+  height: 100vh;
+  font-size: 2.5rem;
+
+  display: grid;
+
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  a {
+    color: var(--pastel-color);
+
+    &:hover {
+      color: var(--pastel-color-2);
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
+  #home {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
   #tech-stack {
     .stack {
       ul {
@@ -328,6 +371,101 @@
   #portfolio {
     columns: 1;
     column-width: 100%;
+
+    .project {
+      height: 100vh;
+
+      .languages {
+        max-height: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  #about {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  #portfolio {
+    .project {
+      img {
+        height: 40vh;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .desc {
+        font-size: 1.3rem;
+      }
+
+      .languages {
+        i {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  #contact {
+    font-size: 2rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  #tech-stack {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
+  #contact {
+    font-size: 1.8rem;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #tech-stack {
+    .stack {
+      column-count: 1;
+      column-width: 100%;
+    }
+  }
+
+  #contact {
+    font-size: 1.5rem;
   }
 }
 </style>

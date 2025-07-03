@@ -20,13 +20,15 @@
     <h3>FRONTEND</h3>
     <div class="stack">
       <ul>
+        <li><i class="devicon-vuejs-plain colored"></i>Vue</li>
+        <li><i class="devicon-nuxtjs-plain colored"></i>Nuxt</li>
         <li><i class="devicon-html5-plain colored"></i>HTML</li>
         <li><i class="devicon-css3-plain colored"></i>CSS</li>
         <li><i class="devicon-sass-plain colored"></i>Sass</li>
         <li><i class="devicon-bootstrap-plain colored"></i>BootStrap</li>
         <li><i class="devicon-bulma-plain colored"></i>Bulma</li>
-        <li><i class="devicon-vuejs-plain colored"></i>Vue</li>
-        <li><i class="devicon-nuxtjs-plain colored"></i>Nuxt</li>
+        <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
+        <li><i class="devicon-jquery-plain colored"></i>jQuery</li>
       </ul>
     </div>
 
@@ -63,17 +65,37 @@
   <div id="portfolio">
     <div class="project">
       <img src="../assets/1.jpg" alt="">
-      <h2>Project Title</h2>
-      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est quia ipsum nulla fuga soluta
-        perspiciatis! Nesciunt culpa officiis c</p>
+      <h2>Art Sphere (Artist's Portfolio)</h2>
+      <p class="desc">Portfolio site for an artist which showcases the artist's skills and talents. It includes the
+        home, about, gallery and contact pages.</p>
       <div class="languages">
         <!---<p>HTML, CSS, JS</p>-->
+        <i class="devicon-vuejs-plain colored"></i>
         <i class="devicon-html5-plain colored"></i>
         <i class="devicon-css3-plain colored"></i>
         <i class="devicon-sass-plain colored"></i>
-        <i class="devicon-bootstrap-plain colored"></i>
-        <i class="devicon-bulma-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+      </div>
+
+      <div class="live-code">
+        <button><a href="https://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/beela303/" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="../assets/1.jpg" alt="">
+      <h2>Movies DataBase</h2>
+      <p class="desc">This is a website that uses the OMDB API to fetch movies and display it on the screen when a movie
+        is searched.</p>
+      <div class="languages">
+        <!---<p>HTML, CSS, JS</p>-->
         <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-sass-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
       </div>
 
       <div class="live-code">
@@ -95,6 +117,7 @@
         <i class="devicon-bootstrap-plain colored"></i>
         <i class="devicon-bulma-plain colored"></i>
         <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
       </div>
 
       <div class="live-code">
@@ -116,27 +139,7 @@
         <i class="devicon-bootstrap-plain colored"></i>
         <i class="devicon-bulma-plain colored"></i>
         <i class="devicon-vuejs-plain colored"></i>
-      </div>
-
-      <div class="live-code">
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a></button>
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a></button>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="../assets/1.jpg" alt="">
-      <h2>Project Title</h2>
-      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est quia ipsum nulla fuga soluta
-        perspiciatis! Nesciunt culpa officiis c</p>
-      <div class="languages">
-        <!---<p>HTML, CSS, JS</p>-->
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-sass-plain colored"></i>
-        <i class="devicon-bootstrap-plain colored"></i>
-        <i class="devicon-bulma-plain colored"></i>
-        <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
       </div>
 
       <div class="live-code">
@@ -149,6 +152,7 @@
 
   <div id="contact">
     <h2>Contact Me</h2>
+    <p>Have a Beautiful design that you'd like to come to life? Send an e-mail and let's talk.</p>
     <p>E-Mail: <a href="mailto:nabilaabubakar333@gmail.com">nabilaabubakar333@gmail.com</a></p>
 
     <h3>Socials:</h3>
@@ -164,7 +168,8 @@
   background: var(--main-gradient);
 
   height: 30vh;
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 
   display: grid;
   justify-content: center;
@@ -180,7 +185,14 @@
 }
 
 #about {
+  background: var(--dark);
+
   height: 70vh;
+  padding: 30px;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
   display: grid;
 
   h2 {
@@ -235,11 +247,14 @@
 }
 
 #portfolio-title {
+  background: var(--dark-color);
+
   font-size: 3rem;
   text-align: center;
 }
 
 #portfolio {
+  background: var(--dark-color);
   column-count: 2;
   column-width: 50%;
 
@@ -251,8 +266,8 @@
     margin: 5%;
     padding: 20px;
 
-    border: 2px solid var(--purple-color);
     border-radius: 15px;
+    border: 2px solid var(--purple-color);
 
     transition: 2s;
 
@@ -277,8 +292,7 @@
     }
 
     .languages {
-      color: var(--dark);
-      background: var(--pastel-color-2);
+      background: none;
 
       min-height: 5vh;
 
@@ -370,7 +384,7 @@
     column-width: 100%;
 
     .project {
-      height: 60vh;
+      /*height: 60vh;*/
 
       img {
         height: 25vh;
@@ -378,12 +392,6 @@
 
       .languages {
         max-height: 3rem;
-      }
-
-      .live-code {
-        button {
-          height: 5vh;
-        }
       }
     }
   }
@@ -403,26 +411,6 @@
   #about {
     h2 {
       font-size: 3rem;
-    }
-  }
-
-  #portfolio {
-    .project {
-      h2 {
-        font-size: 1.8rem;
-      }
-
-      .desc {
-        font-size: 1.3rem;
-      }
-
-      .languages {
-        max-height: 2rem;
-
-        i {
-          font-size: 2.2rem;
-        }
-      }
     }
   }
 
@@ -452,16 +440,6 @@
     }
   }
 
-  #portfolio {
-    .project {
-      height: 50vh;
-
-      img {
-        height: 18vh;
-      }
-    }
-  }
-
   #contact {
     font-size: 1.8rem;
 
@@ -481,6 +459,32 @@
 
   #contact {
     font-size: 1.5rem;
+  }
+
+  #portfolio {
+    .project {
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .desc {
+        font-size: 1.2rem;
+      }
+
+      .languages {
+        i {
+          font-size: 1.8rem;
+        }
+      }
+
+      .live-code {
+        height: 4vh;
+
+        button a {
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 }
 </style>

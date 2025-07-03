@@ -171,11 +171,11 @@
   text-align: center;
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -210,10 +210,7 @@
     column-count: 2;
     column-width: 50%;
 
-
     ul {
-
-
       li {
         color: var(--text-color);
         background: var(--purple-color);
@@ -373,10 +370,20 @@
     column-width: 100%;
 
     .project {
-      height: 100vh;
+      height: 60vh;
+
+      img {
+        height: 25vh;
+      }
 
       .languages {
         max-height: 3rem;
+      }
+
+      .live-code {
+        button {
+          height: 5vh;
+        }
       }
     }
   }
@@ -401,10 +408,6 @@
 
   #portfolio {
     .project {
-      img {
-        height: 40vh;
-      }
-
       h2 {
         font-size: 1.8rem;
       }
@@ -414,8 +417,10 @@
       }
 
       .languages {
+        max-height: 2rem;
+
         i {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
         }
       }
     }
@@ -444,6 +449,16 @@
 
     h3 {
       font-size: 1.8rem;
+    }
+  }
+
+  #portfolio {
+    .project {
+      height: 50vh;
+
+      img {
+        height: 18vh;
+      }
     }
   }
 

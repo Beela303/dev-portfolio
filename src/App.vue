@@ -67,4 +67,10 @@ button {
 li {
   list-style-type: none;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 15px;
+  }
+}
 </style>

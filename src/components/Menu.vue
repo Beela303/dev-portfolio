@@ -15,10 +15,7 @@
 
 <style lang="scss" scoped>
 #navbar {
-    background: #333;
-
     width: 50%;
-    height: 10vh;
 
     margin-left: 25%;
     bottom: 50px;
@@ -35,62 +32,6 @@
         justify-content: space-between;
 
         li {
-
-            /*
-            &:before {
-                content: '';
-
-                background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-
-                width: 80%;
-                height: 70%;
-                top: 15%;
-                left: 10%;
-
-                filter: blur(100px);
-
-                transition: .3s opacity ease-in-out;
-
-                display: block;
-                position: absolute;
-
-                opacity: 0;
-                z-index: 1;
-            }
-
-            &:hover:before {
-                background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-
-                opacity: 1;
-
-                transition: .3s opacity ease-in-out;
-
-                filter: blur(100px);
-            }
-*/
-            &:after {
-                width: 92%;
-                height: 80%;
-                left: 4%;
-                border-radius: 180px;
-
-                content: 'CLICK ME';
-
-                color: rgba(235, 235, 235, 1);
-                background-color: rgb(19, 20, 22);
-
-                font-size: 18px;
-                font-weight: bold;
-
-                line-height: 40;
-                text-align: center;
-
-                display: block;
-                position: absolute;
-
-                z-index: 5;
-            }
-
             a {
                 color: var(--text-color) !important;
 
@@ -103,6 +44,15 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        width: 95%;
+
+        margin-left: 0;
+        bottom: 30px;
     }
 }
 </style>

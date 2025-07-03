@@ -15,12 +15,12 @@ footer {
     text-align: center;
     background: var(--purple-color);
 
-    height: 15vh;
+    height: 10vh;
     bottom: 0;
 
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 
-    font-size: 3rem;
+    font-size: 2rem;
 }
 </style>

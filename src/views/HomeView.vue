@@ -69,7 +69,6 @@
       <p class="desc">Portfolio site for an artist which showcases the artist's skills and talents. It includes the
         home, about, gallery and contact pages.</p>
       <div class="languages">
-        <!---<p>HTML, CSS, JS</p>-->
         <i class="devicon-vuejs-plain colored"></i>
         <i class="devicon-html5-plain colored"></i>
         <i class="devicon-css3-plain colored"></i>
@@ -80,7 +79,8 @@
       <div class="live-code">
         <button><a href="https://art-sphere-vue.vercel.app" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
-        <button><a href="https://github.com/beela303/" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+        <button><a href="https://github.com/Beela303/art-sphere-vue-" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
       </div>
     </div>
 
@@ -90,7 +90,6 @@
       <p class="desc">This is a website that uses the OMDB API to fetch movies and display it on the screen when a movie
         is searched.</p>
       <div class="languages">
-        <!---<p>HTML, CSS, JS</p>-->
         <i class="devicon-vuejs-plain colored"></i>
         <i class="devicon-html5-plain colored"></i>
         <i class="devicon-css3-plain colored"></i>
@@ -99,55 +98,90 @@
       </div>
 
       <div class="live-code">
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a></button>
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+        <button><a href="https://movies-db-beta-nine.vercel.app/" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/Beela303/movies_db" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
       </div>
     </div>
 
     <div class="project">
       <img src="../assets/1.jpg" alt="">
-      <h2>Project Title</h2>
-      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est quia ipsum nulla fuga soluta
-        perspiciatis! Nesciunt culpa officiis c</p>
+      <h2>E-commerce Website</h2>
+      <p class="desc">This is an e-commerce website showcasing the home page, products, account, about, contact and cart
+        pages.</p>
       <div class="languages">
-        <!---<p>HTML, CSS, JS</p>-->
         <i class="devicon-html5-plain colored"></i>
         <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-sass-plain colored"></i>
-        <i class="devicon-bootstrap-plain colored"></i>
-        <i class="devicon-bulma-plain colored"></i>
-        <i class="devicon-vuejs-plain colored"></i>
         <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-jquery-plain colored"></i>
       </div>
 
       <div class="live-code">
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a></button>
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+        <button><a href="https://github.io/Beela303/e-commerce-website" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/Beela303/e-commerce-website" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
       </div>
     </div>
 
     <div class="project">
       <img src="../assets/1.jpg" alt="">
-      <h2>Project Title</h2>
-      <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est quia ipsum nulla fuga soluta
-        perspiciatis! Nesciunt culpa officiis c</p>
+      <h2>Blog Website</h2>
+      <p class="desc">A blog website for a content creator with a light & dark theme, home page and blog page.</p>
       <div class="languages">
-        <!---<p>HTML, CSS, JS</p>-->
         <i class="devicon-html5-plain colored"></i>
         <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-sass-plain colored"></i>
-        <i class="devicon-bootstrap-plain colored"></i>
-        <i class="devicon-bulma-plain colored"></i>
-        <i class="devicon-vuejs-plain colored"></i>
         <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-jquery-plain colored"></i>
       </div>
 
       <div class="live-code">
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">Live Demo</a></button>
-        <button><a href="http://" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+        <button><a href="https://github.io/Beela303/blog-website" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/Beela303/blog-website" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
       </div>
     </div>
 
+    <div class="project">
+      <img src="../assets/1.jpg" alt="">
+      <h2>Queen Beela (Personal Website)</h2>
+      <p class="desc">This is my personal website which has pages for my blog, homepage, podcast, portfolio, gallery and
+        socials.</p>
+      <div class="languages">
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-jquery-plain colored"></i>
+      </div>
+
+      <div class="live-code">
+        <button><a href="https://github.io/Beela303/QueenBeela" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/Beela303/QueenBeela" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="../assets/1.jpg" alt="">
+      <h2>Company Website</h2>
+      <p class="desc">A single page website for a company.</p>
+      <div class="languages">
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-jquery-plain colored"></i>
+      </div>
+
+      <div class="live-code">
+        <button><a href="https://github.io/Beela303/Company-website/" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/Beela303/company-website/" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
+      </div>
+    </div>
   </div>
 
   <div id="contact">

@@ -1,5 +1,13 @@
 # dev_portfolio
 
+This is a single page website I made for my portfolio as a software developer. It includes my stack, projects and socials/contact. Feel free to give your input on how it can be improved.
+
+## TECH STACK
+
+Vuejs
+
+###
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup

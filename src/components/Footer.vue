@@ -6,13 +6,14 @@ export default {
 
 <template>
     <footer>
-        <p>Nabila Abubakar (c) 2025 </p>
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+            <p>Nabila Abubakar (c) 2025 </p>
+        </a>
     </footer>
 </template>
 
 <style lang="scss">
 footer {
-    text-align: center;
     background: var(--purple-color);
 
     height: 10vh;
@@ -22,5 +23,14 @@ footer {
     border-top-right-radius: 30px;
 
     font-size: 2rem;
+    text-align: center;
+
+    a p {
+        color: #fafafa;
+
+        &:hover {
+            color: var(--purple-color-2);
+        }
+    }
 }
 </style>

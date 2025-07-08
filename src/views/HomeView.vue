@@ -56,7 +56,7 @@
         <li><i class="devicon-github-plain colored"></i>GitHUb</li>
         <li><i class="devicon-npm-original-wordmark colored"></i>NPM</li>
         <li><i class="devicon-postman-plain colored"></i>Postman</li>
-        <li><i class="devicon-babel-plain colored"></i>Babel</li>
+        <!--<li><i class="devicon-babel-plain colored"></i>Babel</li>-->
       </ul>
     </div>
   </div>
@@ -64,7 +64,7 @@
   <h2 id="portfolio-title">Portfolio</h2>
   <div id="portfolio">
     <div class="project">
-      <img src="../assets/1.jpg" alt="">
+      <img src="../assets/website assets/art sphere home page 1.png" alt="Art Sphere Homepage">
       <h2>Art Sphere (Artist's Portfolio)</h2>
       <p class="desc">Portfolio site for an artist which showcases the artist's skills and talents. It includes the
         home, about, gallery and contact pages.</p>
@@ -85,7 +85,7 @@
     </div>
 
     <div class="project">
-      <img src="../assets/1.jpg" alt="">
+      <img src="../assets/website assets/Movies Database search page.png" alt="Movies Database Homepage">
       <h2>Movies DataBase</h2>
       <p class="desc">This is a website that uses the OMDB API to fetch movies and display it on the screen when a movie
         is searched.</p>
@@ -106,7 +106,7 @@
     </div>
 
     <div class="project">
-      <img src="../assets/1.jpg" alt="">
+      <img src="../assets/website assets/e-commerce website - homepage.jpeg" alt="E-commerce website Homepage">
       <h2>E-commerce Website</h2>
       <p class="desc">This is an e-commerce website showcasing the home page, products, account, about, contact and cart
         pages.</p>
@@ -126,7 +126,7 @@
     </div>
 
     <div class="project">
-      <img src="../assets/1.jpg" alt="">
+      <img src="../assets/website assets/blog website - blog list.jpeg" alt="Blog website's blog list">
       <h2>Blog Website</h2>
       <p class="desc">A blog website for a content creator with a light & dark theme, home page and blog page.</p>
       <div class="languages">
@@ -145,8 +145,8 @@
     </div>
 
     <div class="project">
-      <img src="../assets/1.jpg" alt="">
-      <h2>Queen Beela (Personal Website)</h2>
+      <img src="../assets/website assets/Queen Beela v1 gallery.jpg" alt="Queen Beela v1 Gallery page">
+      <h2>Queen Beela v1 (Personal Website)</h2>
       <p class="desc">This is my personal website which has pages for my blog, homepage, podcast, portfolio, gallery and
         socials.</p>
       <div class="languages">
@@ -164,8 +164,30 @@
       </div>
     </div>
 
+
     <div class="project">
-      <img src="../assets/1.jpg" alt="">
+      <img src="../assets/website assets/Queen Beela v2 blogs.jpg" alt="Queen Beela v2 Blogs page">
+      <h2>Queen Beela v2 (Personal Website)</h2>
+      <p class="desc">This is my personal website which has pages for my blog, homepage, podcast, portfolio, gallery and
+        socials. The first uses only pure HTML, while this version uses Vue.js</p>
+      <div class="languages">
+        <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-sass-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+      </div>
+
+      <div class="live-code">
+        <button><a href="https://github.io/Beela303/QueenBeela" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/Beela303/QueenBeela" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="../assets/website assets/Company website - services.jpeg" alt="Company website services page">
       <h2>Company Website</h2>
       <p class="desc">A single page website for a company.</p>
       <div class="languages">
@@ -289,6 +311,7 @@
 
 #portfolio {
   background: var(--dark-color);
+
   column-count: 2;
   column-width: 50%;
 

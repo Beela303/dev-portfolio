@@ -1,14 +1,24 @@
 <script>
+import VTooltip from 'v-tooltip';
+
+export default {
+    directives: {
+        tooltip: VTooltip,
+    }
+}
 </script>
 
 <template>
     <div id="navbar">
         <ul>
-            <li><a href="#home"><span class="material-icons">home</span></a></li>
-            <li><a href="#about"><span class="material-icons">person</span></a></li>
-            <li><a href="#tech-stack"><span class="material-icons">layers</span></a></li>
-            <li><a href="#portfolio-title"><span class="material-icons">work</span></a></li>
-            <li><a href="#contact"><span class="material-icons">alternate_email</span></a></li>
+            <li v-tooltip="Home"><a href="#home" title="Home"><span class="material-icons">home</span></a></li>
+            <li v-tooltip="About"><a href="#about" title="About Me"><span class="material-icons">person</span></a></li>
+            <li v-tooltip="Skills"><a href="#tech-stack" title="Skills"><span class="material-icons">layers</span></a>
+            </li>
+            <li v-tooltip="Project"><a href="#portfolio-title" title="Project"><span
+                        class="material-icons">work</span></a></li>
+            <li v-tooltip="Contact"><a href="#contact" title="Contact"><span
+                        class="material-icons">alternate_email</span></a></li>
         </ul>
     </div>
 </template>

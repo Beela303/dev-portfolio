@@ -4,7 +4,8 @@
 <template>
   <div id="home">
     <h1>Hello, there!</h1>
-    <h2>I'm Nabila Abubakar</h2>
+    <h2>I'm <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Nabila Abubakar</a>
+    </h2>
     <h2>Full Stack Developer</h2>
   </div>
 
@@ -181,7 +182,7 @@
       <div class="live-code">
         <button><a href="https://github.io/Beela303/QueenBeela" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
-        <button><a href="https://github.com/Beela303/QueenBeela" target="_blank"
+        <button><a href="https://github.com/Beela303/Queen-Beela-vue-" target="_blank"
             rel="noopener noreferrer">GitHub</a></button>
       </div>
     </div>
@@ -237,6 +238,14 @@
 
   h2 {
     font-size: 2rem;
+
+    a {
+      color: var(--text-color);
+
+      &:hover {
+        color: var(--purple-color-2);
+      }
+    }
   }
 }
 

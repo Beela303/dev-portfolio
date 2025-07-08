@@ -62,8 +62,8 @@
     </div>
   </div>
 
-  <h2 id="portfolio-title">Portfolio</h2>
-  <div id="portfolio">
+  <h2 id="project-title">Projects</h2>
+  <div id="projects">
     <div class="project">
       <img src="../assets/website assets/art sphere home page 1.png" alt="Art Sphere Homepage">
       <h2>Art Sphere (Artist's Portfolio)</h2>
@@ -311,14 +311,14 @@
   }
 }
 
-#portfolio-title {
+#project-title {
   background: var(--dark-color);
 
   font-size: 3rem;
   text-align: center;
 }
 
-#portfolio {
+#projects {
   background: var(--dark-color);
 
   column-count: 2;
@@ -445,7 +445,7 @@
     }
   }
 
-  #portfolio {
+  #projects {
     columns: 1;
     column-width: 100%;
 
@@ -527,7 +527,7 @@
     font-size: 1.5rem;
   }
 
-  #portfolio {
+  #projects {
     .project {
       h2 {
         font-size: 1.8rem;

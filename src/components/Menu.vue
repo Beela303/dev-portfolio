@@ -15,7 +15,7 @@ export default {
             <li v-tooltip="About"><a href="#about" title="About Me"><span class="material-icons">person</span></a></li>
             <li v-tooltip="Skills"><a href="#tech-stack" title="Skills"><span class="material-icons">layers</span></a>
             </li>
-            <li v-tooltip="Project"><a href="#portfolio-title" title="Project"><span
+            <li v-tooltip="Project"><a href="#project-title" title="Project"><span
                         class="material-icons">work</span></a></li>
             <li v-tooltip="Contact"><a href="#contact" title="Contact"><span
                         class="material-icons">alternate_email</span></a></li>

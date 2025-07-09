@@ -119,7 +119,7 @@
       </div>
 
       <div class="live-code">
-        <button><a href="https://github.io/Beela303/e-commerce-website" target="_blank" rel="noopener noreferrer">Live
+        <button><a href="https://beela303.github.io/e-commerce-website" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
         <button><a href="https://github.com/Beela303/e-commerce-website" target="_blank"
             rel="noopener noreferrer">GitHub</a></button>
@@ -138,7 +138,7 @@
       </div>
 
       <div class="live-code">
-        <button><a href="https://github.io/Beela303/blog-website" target="_blank" rel="noopener noreferrer">Live
+        <button><a href="https://beela303.github.io/blog-website" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
         <button><a href="https://github.com/Beela303/blog-website" target="_blank"
             rel="noopener noreferrer">GitHub</a></button>
@@ -158,7 +158,7 @@
       </div>
 
       <div class="live-code">
-        <button><a href="https://github.io/Beela303/QueenBeela" target="_blank" rel="noopener noreferrer">Live
+        <button><a href="https://beela303github.io/QueenBeela" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
         <button><a href="https://github.com/Beela303/QueenBeela" target="_blank"
             rel="noopener noreferrer">GitHub</a></button>
@@ -180,7 +180,7 @@
       </div>
 
       <div class="live-code">
-        <button><a href="https://github.io/Beela303/QueenBeela" target="_blank" rel="noopener noreferrer">Live
+        <button><a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
         <button><a href="https://github.com/Beela303/Queen-Beela-vue-" target="_blank"
             rel="noopener noreferrer">GitHub</a></button>
@@ -199,7 +199,7 @@
       </div>
 
       <div class="live-code">
-        <button><a href="https://github.io/Beela303/Company-website/" target="_blank" rel="noopener noreferrer">Live
+        <button><a href="https://beela303.github.io/Company-website/" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
         <button><a href="https://github.com/Beela303/company-website/" target="_blank"
             rel="noopener noreferrer">GitHub</a></button>

@@ -158,7 +158,7 @@
       </div>
 
       <div class="live-code">
-        <button><a href="https://beela303github.io/QueenBeela" target="_blank" rel="noopener noreferrer">Live
+        <button><a href="https://beela303.github.io/QueenBeela" target="_blank" rel="noopener noreferrer">Live
             Demo</a></button>
         <button><a href="https://github.com/Beela303/QueenBeela" target="_blank"
             rel="noopener noreferrer">GitHub</a></button>

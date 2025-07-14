@@ -2,8 +2,6 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Menu from './components/Menu.vue'
 import Footer from './components/Footer.vue';
-
-import { Analytics } from "@vercel/analytics/next"
 </script>
 
 <template>

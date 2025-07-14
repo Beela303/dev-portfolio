@@ -64,6 +64,30 @@
 
   <h2 id="project-title">Projects</h2>
   <div id="projects">
+
+    <div class="project">
+      <img src="../assets/website assets/Space Tourism HomePage.png" alt="Space Tourism Homepage">
+      <h2>Space Tourism Website (Frontend Challenge)</h2>
+      <p class="desc">This is a challenge by <a href="http://frontendmentor.io" target="_blank"
+          rel="noopener noreferrer">Frontend Mentor</a>. It features the HomePage, Destination, Crew, Technology and
+        several other
+        nested pages.</p>
+      <div class="languages">
+        <i class="devicon-vuejs-plain colored"></i>
+        <i class="devicon-sass-plain colored"></i>
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+      </div>
+
+      <div class="live-code">
+        <button><a href="https://space-tourism-flax-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">Live
+            Demo</a></button>
+        <button><a href="https://github.com/Beela303/space-tourism/" target="_blank"
+            rel="noopener noreferrer">GitHub</a></button>
+      </div>
+    </div>
+
     <div class="project">
       <img src="../assets/website assets/art sphere home page 1.png" alt="Art Sphere Homepage">
       <h2>Art Sphere (Artist's Portfolio)</h2>
@@ -355,6 +379,14 @@
     .desc {
       margin: 2%;
       font-size: 1.5rem;
+
+      a {
+        color: var(--purple-color);
+
+        &:hover {
+          color: var(--pastel-color);
+        }
+      }
     }
 
     .languages {

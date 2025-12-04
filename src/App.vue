@@ -41,7 +41,6 @@ import Footer from './components/Footer.vue';
   padding: 0;
 
   box-sizing: border-box;
-  font-family: 'sansita', sans-serif;
 
   text-decoration: none;
 }

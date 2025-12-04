@@ -52,6 +52,15 @@ body {
 
   margin: 30px;
 
+  font-family: "Bitcount Prop Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+
   overflow-x: hidden;
 }
 

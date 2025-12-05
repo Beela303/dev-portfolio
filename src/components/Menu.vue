@@ -65,4 +65,10 @@ export default {
         bottom: 30px;
     }
 }
+
+@media screen and (max-width: 300px) {
+    #navbar {
+        margin-top: 77vh;
+    }
+}
 </style>

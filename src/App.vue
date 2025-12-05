@@ -64,10 +64,19 @@ body {
 }
 
 button {
-  appearance: none;
+  font-family: "Bitcount Prop Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+
+  background: none;
   border: none;
   outline: none;
-  background: none;
+  appearance: none;
 
   cursor: pointer;
 }

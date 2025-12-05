@@ -37,6 +37,8 @@ import Footer from './components/Footer.vue';
 }
 
 * {
+  width: 100% !important;
+
   margin: 0;
   padding: 0;
 

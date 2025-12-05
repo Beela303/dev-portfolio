@@ -68,7 +68,7 @@ export default {
 
 @media screen and (max-width: 400px) {
     #navbar {
-        width: 100%;
+        width: 85%;
         margin-top: 77vh;
     }
 }

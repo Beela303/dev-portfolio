@@ -253,8 +253,8 @@
   border-top-right-radius: 30px;
 
   display: grid;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
 
   h1 {
     font-size: 3rem;
@@ -308,15 +308,19 @@
   .stack {
     margin: 30px;
 
-    column-count: 2;
-    column-width: 50%;
+    //column-count: 2;
+    //column-width: 50%;
 
     ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+
       li {
         color: var(--text-color);
         background: var(--purple-color);
 
-        width: 70%;
+        //width: 70%;
 
         padding: 5px;
         margin: 2%;
@@ -345,15 +349,19 @@
 #projects {
   background: var(--dark-color);
 
-  column-count: 2;
-  column-width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  //column-count: 2;
+  //column-width: 50%;
 
   .project {
     color: var(--text-color);
 
-    height: 90vh;
+    //height: 90vh;
 
-    margin: 5%;
+    //margin: 5%;
     padding: 20px;
 
     border-radius: 15px;
@@ -536,6 +544,16 @@
     h3 {
       font-size: 1.8rem;
     }
+
+    .stack {
+      ul {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
   }
 
   #contact {
@@ -550,8 +568,7 @@
 @media screen and (max-width: 430px) {
   #tech-stack {
     .stack {
-      column-count: 1;
-      column-width: 100%;
+      grid-template-columns: 1fr;
     }
   }
 
@@ -577,6 +594,7 @@
 
       .live-code {
         height: 4vh;
+        margin-bottom: 3vh;
 
         button a {
           font-size: 1.2rem;

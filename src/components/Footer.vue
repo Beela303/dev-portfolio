@@ -7,7 +7,7 @@ export default {
 <template>
     <footer>
         <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <p>Nabila Abubakar (c) 2025 </p>
+            <p>Nabila Abubakar (c) 2026 </p>
         </a>
     </footer>
 </template>

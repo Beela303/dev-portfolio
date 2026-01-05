@@ -24,9 +24,9 @@
       <ul>
         <li><i class="devicon-nuxtjs-plain colored"></i>Nuxt</li>
         <li><i class="devicon-vuejs-plain colored"></i>Vue</li>
+        <li><i class="devicon-sass-plain colored"></i>SASS</li>
         <li><i class="devicon-html5-plain colored"></i>HTML</li>
         <li><i class="devicon-css3-plain colored"></i>CSS</li>
-        <li><i class="devicon-sass-plain colored"></i>SASS</li>
         <li><i class="devicon-bootstrap-plain colored"></i>BootStrap</li>
         <li><i class="devicon-bulma-plain colored"></i>Bulma</li>
         <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
@@ -47,8 +47,8 @@
     <h3>APP DEVELOPMENT</h3>
     <div class="stack">
       <ul>
-        <li><i class="devicon-electron-original colored"></i>Electron</li>
-        <li><i class="devicon-ionic-original colored"></i>Ionic</li>
+        <li><i class="devicon-electron-original"></i>Electron</li>
+        <li><i class="devicon-ionic-original"></i>Ionic</li>
       </ul>
     </div>
 

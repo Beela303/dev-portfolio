@@ -47,8 +47,8 @@
     <h3>APP DEVELOPMENT</h3>
     <div class="stack">
       <ul>
-        <li><i class="devicon-electron-original"></i>Electron</li>
-        <li><i class="devicon-ionic-original"></i>Ionic</li>
+        <li><i class="devicon-electron-original colored"></i>Electron</li>
+        <li><i class="devicon-ionic-original colored"></i>Ionic</li>
       </ul>
     </div>
 

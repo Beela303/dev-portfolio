@@ -4,16 +4,17 @@
 <template>
   <div id="home">
     <h1>Hello, there!</h1>
-    <h2>I'm <a href="https://beela303-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Nabila Abubakar</a>
+    <h2>I'm <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer">Nabila Abubakar</a>
     </h2>
-    <h2>Full Stack Developer</h2>
+    <h2>Software Developer Developer</h2>
   </div>
 
   <div id="about">
     <h2>About Me:</h2>
-    <p>Highly skilled Full Stack Web Developer with expertise in Front-end and Back-end development.</p>
-    <p>Passionate about Delivering High Quality Web Applications that meet client needs.</p>
-    <p>Proficient in HTML, CSS, SASS, Bootstrap, jQuery, JavaScript, Vue, Nuxt.js, Django & MySQL</p>
+    <p>Highly skilled Software Developer with expertise in Front-end and Back-end development.</p>
+    <p>Passionate about Delivering High Quality Web, Mobile and Desktop Applications that meets client needs.</p>
+    <p>Proficient in Nuxt.js, Vue.js, Ionic, Electron, HTML, CSS, SASS/SCSS, Bootstrap, jQuery, JavaScript, Django &
+      MySQL</p>
   </div>
 
   <div id="tech-stack">
@@ -21,11 +22,11 @@
     <h3>FRONTEND</h3>
     <div class="stack">
       <ul>
-        <li><i class="devicon-vuejs-plain colored"></i>Vue</li>
         <li><i class="devicon-nuxtjs-plain colored"></i>Nuxt</li>
+        <li><i class="devicon-vuejs-plain colored"></i>Vue</li>
         <li><i class="devicon-html5-plain colored"></i>HTML</li>
         <li><i class="devicon-css3-plain colored"></i>CSS</li>
-        <li><i class="devicon-sass-plain colored"></i>Sass</li>
+        <li><i class="devicon-sass-plain colored"></i>SASS</li>
         <li><i class="devicon-bootstrap-plain colored"></i>BootStrap</li>
         <li><i class="devicon-bulma-plain colored"></i>Bulma</li>
         <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
@@ -40,6 +41,14 @@
         <li><i class="devicon-djangorest-plain colored"></i>Django Rest Framework</li>
         <li><i class="devicon-graphql-plain colored"></i>GraphQL</li>
         <li><i class="devicon-mysql-plain colored"></i>MySQL</li>
+      </ul>
+    </div>
+
+    <h3>APP DEVELOPMENT</h3>
+    <div class="stack">
+      <ul>
+        <li><i class="devicon-electron-original colored"></i>Electron</li>
+        <li><i class="devicon-ionic-original colored"></i>Ionic</li>
       </ul>
     </div>
 

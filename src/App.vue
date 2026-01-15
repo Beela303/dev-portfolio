@@ -29,7 +29,6 @@ import Footer from './components/Footer.vue';
   --background-color: #3B1C32;
   --main-color: #6A1E55;
   --pastel-color: #A64D79;
-  --text-color: #fff7f3;
 
   --main-gradient: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   --purple-color: #a166ab;

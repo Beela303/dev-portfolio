@@ -6,7 +6,7 @@
     <h1>Hello, there!</h1>
     <h2>I'm <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer">Nabila Abubakar</a>
     </h2>
-    <h2>Software Developer Developer</h2>
+    <h2>Software Developer</h2>
   </div>
 
   <div id="about">
@@ -15,6 +15,12 @@
     <p>Passionate about Delivering High Quality Web, Mobile and Desktop Applications that meets client needs.</p>
     <p>Proficient in Nuxt.js, Vue.js, Ionic, Electron, HTML, CSS, SASS/SCSS, Bootstrap, jQuery, JavaScript, Django &
       MySQL</p>
+  </div>
+
+  <div id="download-cv">
+    <a href="Software Developer - Nabila Abubakar.pdf" download="Software Developer - Nabila Abubakar.pdf">
+      <button>Download CV</button>
+    </a>
   </div>
 
   <div id="tech-stack">
@@ -300,6 +306,33 @@
 
   p {
     font-size: 1.5rem;
+  }
+}
+
+#download-cv{
+  margin: 50px;
+  
+  display: flex;
+  justify-content: center;
+  
+  button {
+    color: var(--text-color);
+    background-color: var(--pastel-color);
+    
+    width: 300px;
+    height: 70px;
+    
+    font-size: 1.5rem;
+    border-radius: 50px;
+
+    transition: 2s;
+
+    &:hover {
+      width: 280px;
+      height: 50px;
+
+      font-size: 1.3rem;
+    }
   }
 }
 

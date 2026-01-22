@@ -69,7 +69,7 @@
     <h3>TOOLS & UTILITIES</h3>
     <div class="stack">
       <ul>
-        <li><i class="devicon-github-plain colored"></i>GitHUb</li>
+        <li><i class="devicon-github-plain colored"></i>GitHub</li>
         <li><i class="devicon-npm-original-wordmark colored"></i>NPM</li>
         <li><i class="devicon-postman-plain colored"></i>Postman</li>
         <!--<li><i class="devicon-babel-plain colored"></i>Babel</li>-->
@@ -557,6 +557,8 @@
   }
 
   #about {
+    height: 100vh;
+
     h2 {
       font-size: 3rem;
     }
@@ -608,6 +610,12 @@
 }
 
 @media screen and (max-width: 430px) {
+  #about {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
   #tech-stack {
     .stack {
       grid-template-columns: 1fr;

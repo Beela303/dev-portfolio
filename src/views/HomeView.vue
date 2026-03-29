@@ -13,7 +13,7 @@
     <h2>About Me:</h2>
     <p>Highly skilled Software Developer with expertise in Front-end and Back-end development.</p>
     <p>Passionate about Delivering High Quality Web, Mobile and Desktop Applications that meets client needs.</p>
-    <p>Proficient in Nuxt.js, Vue.js, Ionic, Electron, HTML, CSS, SASS/SCSS, Bootstrap, jQuery, JavaScript, Django &
+    <p>Proficient in React.js, Nuxt.js, Vue.js, Ionic, Electron, HTML, CSS, SASS/SCSS, Bootstrap, jQuery, JavaScript, Django &
       MySQL</p>
   </div>
 
@@ -28,6 +28,7 @@
     <h3>FRONTEND</h3>
     <div class="stack">
       <ul>
+        <li><i class="devicon-reactjs-plain colored"></i>React</li>
         <li><i class="devicon-nuxtjs-plain colored"></i>Nuxt</li>
         <li><i class="devicon-vuejs-plain colored"></i>Vue</li>
         <li><i class="devicon-sass-plain colored"></i>SASS</li>
@@ -63,6 +64,7 @@
       <ul>
         <li><i class="devicon-vercel-plain colored"></i>Vercel</li>
         <li><i class="devicon-cloudflare-plain colored"></i>Cloudflare</li>
+        <li><i class="devicon-netlify-plain colored"></i>Netlify</li>
       </ul>
     </div>
 

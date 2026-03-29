@@ -13,7 +13,8 @@
     <h2>About Me:</h2>
     <p>Highly skilled Software Developer with expertise in Front-end and Back-end development.</p>
     <p>Passionate about Delivering High Quality Web, Mobile and Desktop Applications that meets client needs.</p>
-    <p>Proficient in React.js, Nuxt.js, Vue.js, Ionic, Electron, HTML, CSS, SASS/SCSS, Bootstrap, jQuery, JavaScript, Django &
+    <p>Proficient in React.js, Nuxt.js, Vue.js, Ionic, Electron, HTML, CSS, SASS/SCSS, Bootstrap, Tailwind, jQuery,
+      JavaScript, Django &
       MySQL</p>
   </div>
 
@@ -35,6 +36,7 @@
         <li><i class="devicon-html5-plain colored"></i>HTML</li>
         <li><i class="devicon-css3-plain colored"></i>CSS</li>
         <li><i class="devicon-bootstrap-plain colored"></i>BootStrap</li>
+        <li><i class="devicon-tailwind-plain colored"></i>Tailwind</li>
         <li><i class="devicon-bulma-plain colored"></i>Bulma</li>
         <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
         <li><i class="devicon-jquery-plain colored"></i>jQuery</li>
@@ -311,19 +313,19 @@
   }
 }
 
-#download-cv{
+#download-cv {
   margin: 50px;
-  
+
   display: flex;
   justify-content: center;
-  
+
   button {
     color: var(--text-color);
     background-color: var(--pastel-color);
-    
+
     width: 300px;
     height: 70px;
-    
+
     font-size: 1.5rem;
     border-radius: 50px;
 

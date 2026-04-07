@@ -640,6 +640,16 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  #skills {
+    ul {
+      display: grid;
+
+      li {
+        margin-left: 0;
+      }
+    }
+  }
+
   #tech-stack {
     ul {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -712,16 +722,6 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-    #skills {
-    ul {
-      display: grid;
-
-      li {
-        margin-left: 0;
-      }
-    }
-  }
-
   #tech-stack {
     ul {
       grid-template-columns: 1fr 1fr 1fr;

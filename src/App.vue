@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Menu from './components/Menu.vue'
 import Footer from './components/Footer.vue';
-import scrollToTop from './components/scrollToTop.vue';
+import ScrollToTop from './components/ScrollToTop.vue';
 </script>
 
 <template>

@@ -8,7 +8,7 @@ import scrollToTop from './components/scrollToTop.vue';
 <template>
   <Menu />
   <RouterView />
-  <scrollToTop />
+  <ScrollToTop />
   <Footer />
 </template>
 

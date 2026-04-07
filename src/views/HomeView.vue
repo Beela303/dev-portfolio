@@ -640,16 +640,6 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  #skills {
-    ul {
-      display: grid;
-
-      li {
-        margin-left: 0;
-      }
-    }
-  }
-
   #tech-stack {
     ul {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -722,6 +712,16 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+    #skills {
+    ul {
+      display: grid !important;
+
+      li {
+        margin-left: 0;
+      }
+    }
+  }
+
   #tech-stack {
     ul {
       grid-template-columns: 1fr 1fr 1fr;
@@ -745,19 +745,11 @@ h3 {
 
   #contact-form {
     form {
-      label {
-        font-size: 1rem;
-      }
-
-      input {
-        height: 30px;
-      }
-
       button {
         width: 50%;
-        height: 5vh;
+        height: 7vh;
 
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
     }
   }

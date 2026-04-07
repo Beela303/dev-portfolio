@@ -100,20 +100,16 @@ footer {
 @media screen and (max-width: 500px) {
     footer {
     i {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     #socials {
         ul {
-            li {
-                &:first-child {
-                    margin-left: 0px;
-                }
+            display: block;
 
+            li {
                 margin: 3px;
                 padding: 3px;
-
-                border: 1px solid var(--text-color);
             }
         }
     }

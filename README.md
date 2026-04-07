@@ -1,10 +1,13 @@
 # dev_portfolio
 
-This is a single page website I made for my portfolio as a software developer. It includes my stack, projects and socials/contact. Feel free to give your input on how it can be improved.
+This is a single page website I made for my portfolio as a software developer. It includes my stack, experience, projects and socials/contact. 
+
+Feel free to give your input on how it can be improved.
 
 ## TECH STACK
-
 Vuejs
+
+Sass
 
 ###
 

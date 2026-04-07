@@ -55,10 +55,10 @@ const toggleMenu = () => {
         width: 30vw;
         height: 45vh;
 
-        bottom: 4%;
-        left: 95px;
-        //bottom: 15%;
-        //left: 30px;
+        //bottom: 4%;
+        //left: 95px;
+        bottom: 15%;
+        left: 30px;
 
         border-radius: 30px;
         position: fixed;
@@ -77,6 +77,14 @@ const toggleMenu = () => {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        #menu {
+            width: 50vw;
         }
     }
 }

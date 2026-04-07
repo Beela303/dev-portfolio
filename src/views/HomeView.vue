@@ -407,6 +407,8 @@ h3 {
     }
 
     p {
+      font-size: 1.3rem !important;
+
       a {
         color: var(--pastel-color-2);
       }
@@ -490,12 +492,16 @@ h3 {
 
     .time {
       color: var(--pastel-color);
+      font-size: 1.3rem;
     }
-
+    
     .title {
       margin: 0;
+      font-size: 1.6rem;
     }
-    .company {}
+    .company {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -706,6 +712,16 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+    #skills {
+    ul {
+      display: grid;
+
+      li {
+        margin-left: 0;
+      }
+    }
+  }
+
   #tech-stack {
     ul {
       grid-template-columns: 1fr 1fr 1fr;
@@ -718,16 +734,6 @@ h3 {
     button {
       width: 70vw;
       font-size: 1rem;
-    }
-  }
-
-  #skills {
-    ul {
-      display: grid;
-
-      li {
-        margin-left: 0;
-      }
     }
   }
 

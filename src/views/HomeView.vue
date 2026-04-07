@@ -24,7 +24,7 @@
 
     <div id="download-cv">
       <a href="Software Developer - Nabila Abubakar.pdf" download="Software Developer - Nabila Abubakar.pdf">
-        <button>Download CV</button>
+        <button>Download Resume</button>
       </a>
     </div>
   </section>

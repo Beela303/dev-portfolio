@@ -4,7 +4,7 @@
       <h1> <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="highlight-text">Nabila</span> Abubakar</a>
       </h1>
       <h2 class="highlight-text">Software Developer</h2>
-      <p>Email:<a href="mailto:nabilaabubakar333@gmail.com">nabilaabubakar333<br />@gmail.com</a></p>
+      <p>Email:<br /> <a href="mailto:nabilaabubakar333@gmail.com">nabilaabubakar333@gmail.com</a></p>
     </div>
 
     <hr />
@@ -789,16 +789,6 @@ h3 {
         height: 7vh;
 
         font-size: 1.3rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 350px) {
-  #me {
-    #intro {
-      p {
-        font-size: .7rem !important;
       }
     }
   }

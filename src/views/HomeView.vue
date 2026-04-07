@@ -4,7 +4,7 @@
       <h1> <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="highlight-text">Nabila</span> Abubakar</a>
       </h1>
       <h2 class="highlight-text">Software Developer</h2>
-      <p>Email: <a href="mailto:nabilaabubakar333@gmail.com">nabilaabubakar333@gmail.com</a></p>
+      <p>Email:<br /> <a href="mailto:nabilaabubakar333@gmail.com">nabilaabubakar333@gmail.com</a></p>
     </div>
 
     <hr />
@@ -332,8 +332,8 @@
     <h2 class="title-tac">CONTACT ME</h2>
     <div id="contact-form">
       <form action="https://formsubmit.co/dc027401bb393a2c66cb207f9cccd3e2" method="POST">
-        <!--Thank you page-->
-        <input type="hidden" name="_next" value="https://beela303-dev.vercel.app/thanks.html" />
+        <!--Thank you page
+        <input type="hidden" name="_next" value="https://beela303-dev.vercel.app/thanks.html" />-->
         
         <!--Honeypot-->
         <input type="text" name="_honey" style="display:none" />
@@ -397,13 +397,16 @@ h3 {
     margin-bottom: 10px !important;
 
     h1 {
+      font-size: 3rem !important;
+
       a {
         color: var(--text-color);
       }
     }
 
     h2 {
-       margin-top: 5px;
+      margin-top: 5px;
+      font-size: 2rem !important;
     }
 
     p {
@@ -427,8 +430,11 @@ h3 {
         }
 
         background-color: var(--dark);
+
         margin: 10px;
         padding: 5px;
+
+        font-size: 1.3rem;
 
         border: 1px solid var(--text-color);
         border-radius: 15px;
@@ -474,7 +480,7 @@ h3 {
       margin: 10px;
       padding: 5px;
 
-      font-size: 1.2rem;
+      font-size: 1.5rem;
 
       border: 1px solid var(--text-color);
       border-radius: 15px;
@@ -712,11 +718,19 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-    #skills {
+  #intro p {
+    font-size: 1rem;
+  }
+
+  #skills {
     ul {
       display: grid !important;
 
       li {
+        &:first-child {
+          margin-left: 0px;
+        }
+
         margin-left: 0;
       }
     }

@@ -79,8 +79,13 @@ footer {
             justify-content: center;
 
             li {
+                
                 &:first-child {
                     margin-left: 0px;
+                }
+
+                i {
+                    font-size: 30px; 
                 }
 
                 //background-color: var(--pastel-color-1);
@@ -94,6 +99,7 @@ footer {
 
     #footer-name {
         text-align: center;
+        font-size: 1.5rem;
     }
 }
 

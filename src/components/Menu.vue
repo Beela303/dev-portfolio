@@ -68,6 +68,8 @@ const toggleMenu = () => {
             li {
                 margin-bottom: 4vh;
 
+                font-size: 1.5rem;
+
                 a {
                     color: var(--text-color);
 

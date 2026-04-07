@@ -744,6 +744,14 @@ h3 {
 }
 
 @media screen and (max-width: 400px) {
+  #me {
+    #intro {
+      p {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
   #download-cv {
     button {
       width: 70vw;

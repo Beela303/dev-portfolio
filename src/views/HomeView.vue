@@ -359,7 +359,7 @@
 
         <label for="description">Description:</label>
         <br />
-        <textarea type="text" id="description" name="description" placeholder="I'm looking for..." rows="5" cols="40" required>Enter your message here...</textarea>
+        <textarea type="text" id="description" name="description" placeholder="I'm looking for..." rows="5" cols="40" required></textarea>
         <br />
 
         <button type="submit">Submit</button>
@@ -502,7 +502,7 @@ h3 {
     
     .title {
       color: var(--pastel-color);
-      
+
       margin: 0;
       font-size: 1.6rem;
     }

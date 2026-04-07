@@ -719,7 +719,7 @@ h3 {
 
 @media screen and (max-width: 600px) {
   #intro p {
-    font-size: 1rem !important;
+    font-size: .7rem !important;
   }
 
   #skills {

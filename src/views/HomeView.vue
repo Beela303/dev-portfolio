@@ -718,10 +718,12 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-  #intro p {
-    font-size: .7rem !important;
+  #intro {
+    p {
+      font-size: .7rem !important;
+    }
   }
-
+  
   #skills {
     ul {
       display: grid !important;

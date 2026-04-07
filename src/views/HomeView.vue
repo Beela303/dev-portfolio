@@ -654,7 +654,7 @@ h3 {
   
   #download-cv {
     button {
-      width: 50vw !important;
+      width: 100% !important;
     }
   }
 
@@ -719,7 +719,7 @@ h3 {
 
 @media screen and (max-width: 600px) {
   #intro p {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   #skills {
@@ -727,11 +727,7 @@ h3 {
       display: grid !important;
 
       li {
-        &:first-child {
-          margin-left: 0px;
-        }
-
-        margin-left: 0;
+        margin-left: 0 !important;
       }
     }
   }

@@ -111,8 +111,6 @@ footer {
 
     #socials {
         ul {
-            display: block;
-
             li {
                 margin: 3px;
                 padding: 3px;

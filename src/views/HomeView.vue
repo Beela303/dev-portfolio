@@ -497,11 +497,12 @@ h3 {
     border-radius: 30px;
 
     .time {
-      color: var(--pastel-color);
       font-size: 1.3rem;
     }
     
     .title {
+      color: var(--pastel-color);
+      
       margin: 0;
       font-size: 1.6rem;
     }

@@ -12,7 +12,6 @@ import ScrollToTop from './components/ScrollToTop.vue';
   <Footer />
 </template>
 
-
 <style lang="scss">
 :root {
   --background-color-2: #C599B6;

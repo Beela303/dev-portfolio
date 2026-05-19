@@ -35,14 +35,14 @@
     <div class="stack">
       <ul>
         <li><i class="devicon-react-plain colored"></i>React</li>
-        <li><i class="devicon-nuxtjs-plain colored"></i>Nuxt</li>
+        <!--<li><i class="devicon-nuxtjs-plain colored"></i>Nuxt</li>-->
         <li><i class="devicon-vuejs-plain colored"></i>Vue</li>
         <li><i class="devicon-sass-plain colored"></i>SASS</li>
         <li><i class="devicon-html5-plain colored"></i>HTML</li>
         <li><i class="devicon-css3-plain colored"></i>CSS</li>
         <li><i class="devicon-bootstrap-plain colored"></i>BootStrap</li>
         <li><i class="devicon-tailwindcss-plain colored"></i>Tailwind</li>
-        <li><i class="devicon-bulma-plain colored"></i>Bulma</li>
+        <!--<li><i class="devicon-bulma-plain colored"></i>Bulma</li>-->
         <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
         <li><i class="devicon-jquery-plain colored"></i>jQuery</li>
       </ul>
@@ -54,7 +54,8 @@
         <li><i class="devicon-django-plain colored"></i>Django</li>
         <li><i class="devicon-djangorest-plain colored"></i>DRF</li>
         <li><i class="devicon-graphql-plain colored"></i>GraphQL</li>
-        <li><i class="devicon-mysql-plain colored"></i>MySQL</li>
+        <li><i class="devicon-postgresql-plain colored"></i>PostgreSQL</li>
+        <!--<li><i class="devicon-mysql-plain colored"></i>MySQL</li>-->
       </ul>
     </div>
 
@@ -92,8 +93,16 @@
     <h2 class="title-tac">EXPERIENCE</h2>
 
     <div class="experience">
+      <span class="time">May 2026 - Present</span>
+      <h3 class="title">Backend Developer Intern</h3>
+      <h4><span class="framework">Language / Framework:</span> Java, SpringBoot</h4>
+      <p class="company">FlexiSAF Edusoft Limited</p>
+    </div>
+
+    <div class="experience">
       <span class="time">Jan 2026 - April 2026</span>
       <h3 class="title">Frontend Developer Intern</h3>
+      <h4><span class="framework">Language / Framework:</span> JavaScript, React</h4>
       <p class="company">FlexiSAF Edusoft Limited</p>
     </div>
 
@@ -506,6 +515,15 @@ h3 {
       margin: 0;
       font-size: 1.6rem;
     }
+
+    h4 {
+      margin: 5px 0;
+     
+      .framework {
+        color: var(--grey);
+      }
+    }
+
     .company {
       font-size: 1.4rem;
     }

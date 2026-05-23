@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from 'vue'
+
+const isFrontendSectionOpen = ref(true)
+</script>
+
 <template>
   <section id="me">
     <div id="intro">
@@ -109,9 +115,17 @@
   </section>
 
   <h2 class="title-tac" id="project-start">Projects</h2>
-  <h3 class="project-title">Frontend</h3>
+  
+  <header class="section-header">
+    <h3 class="project-title">Frontend</h3>
+      <button class="toggle-icon-btn" @click="isFrontendSectionOpen = !isFrontendSectionOpen" :aria-expanded="isFrontendSectionOpen">
+        <span class="material-icons">
+          {{ isFrontendSectionOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}
+        </span>
+      </button>
+    </header>
 
-  <section id="projects">
+  <section class="projects" v-if="isFrontendSectionOpen">
     <div class="project">
       <div class="left">
         <img src="../assets/website assets/srv-home-page-01.jpg" alt="Smart Results Viewer">
@@ -154,7 +168,6 @@
         <div class="languages">
           <i class="devicon-vuejs-plain colored"></i>
           <i class="devicon-sass-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
         </div>
 
         <div class="live-code">
@@ -178,7 +191,6 @@
         <div class="languages">
           <i class="devicon-vuejs-plain colored"></i>
           <i class="devicon-sass-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
         </div>
 
         <div class="live-code">
@@ -190,7 +202,7 @@
       </div>
     </div>
 
-    <div class="project">
+    <!--<div class="project">
       <div class="left">
         <img src="../assets/website assets/Queen Beela v2 blogs.jpg" alt="Queen Beela v2 Blogs page">
       </div>
@@ -212,7 +224,7 @@
               rel="noopener noreferrer">GitHub</a></button>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="project">
       <div class="left">
@@ -226,7 +238,6 @@
         <div class="languages">
           <i class="devicon-vuejs-plain colored"></i>
           <i class="devicon-sass-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
         </div>
 
         <div class="live-code">
@@ -238,7 +249,7 @@
       </div>
     </div>
 
-    <div class="project">
+    <!--<div class="project">
       <div class="left">
         <img src="../assets/website assets/blog website - blog list.jpeg" alt="Blog website's blog list">
       </div>
@@ -260,7 +271,7 @@
               rel="noopener noreferrer">GitHub</a></button>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!--<div class="project">
       <div class="left">
@@ -393,6 +404,11 @@
 h3 {
   margin-left: 55px;
   margin-top: 15px;
+}
+
+.material-icons {
+  font-size: 24px;
+  color: #5f6368; 
 }
 
 #me {
@@ -530,12 +546,39 @@ h3 {
   }
 }
 
-.project-title {
-  font-size: 1.5rem;
-  margin-top: 10px;
+.section-header {
+  margin-bottom: 12px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .project-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .close-icon-btn {
+    background: none;
+    
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    
+    transition: background-color 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+  }
+
+  .close-icon-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
 }
 
-#projects {
+.projects {
   .project {
     background: var(--dark);
 

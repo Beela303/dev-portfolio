@@ -535,9 +535,9 @@ h3 {
     h4 {
       margin: 5px 0;
      
-      .framework {
+      /*.framework {
         color: var(--grey);
-      }
+      }*/
     }
 
     .company {
@@ -554,13 +554,12 @@ h3 {
 
   .project-title {
     font-size: 1.5rem;
-    margin-top: 10px;
   }
 
   .close-icon-btn {
     background: none;
     
-    padding: 8px;
+    //padding: 8px;
     border: none;
     border-radius: 50%;
     
@@ -709,8 +708,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
   #me {
-      #intro {
-
+    #intro {
       h1 {
         font-size: 2.5rem !important;
       }
@@ -733,7 +731,7 @@ h3 {
     }
   }
 
-  #projects {
+  .projects {
     .project {
       width: 90% !important;
       height: 90vh;
@@ -749,7 +747,7 @@ h3 {
       }
 
       .right {
-        width: 100%;
+        width: 100% !important;
         padding: 0;
         
         h2 {
@@ -792,6 +790,14 @@ h3 {
   }
 }
 
+@media screen and (max-width: 680px) {
+    #tech-stack {
+    ul {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   #me {
     #intro {
@@ -810,10 +816,16 @@ h3 {
       }
     }
   }
+}
 
+@media screen and (max-width: 500px) {
   #tech-stack {
     ul {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+
+      li {
+        margin: 0;
+      }
     }
   }
 }
@@ -831,16 +843,6 @@ h3 {
     button {
       width: 70vw;
       font-size: 1rem;
-    }
-  }
-
-  #tech-stack {
-    ul {
-      grid-template-columns: 1fr 1fr;
-
-      li {
-        margin: 0;
-      }
     }
   }
 

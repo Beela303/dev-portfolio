@@ -236,6 +236,32 @@ const fullstackSection = ref(true)
 
         <div class="project">
           <div class="left">
+            <img src="../assets/website assets/login - inventory dashboard.jpg" alt="Inventory Dashboard">
+          </div>
+
+          <div class="right">
+            <h2>
+              Inventory Dashboard
+            </h2>
+            <p class="desc">This is a full stack inventory dashboard with an accounts, inventory and sales app
+              it features products, category, stocks, stock management, sales and low stock. A user can only perform
+              tasks added by the Super Admin,
+              the permissions include Admin, Cashier and manager.
+            </p>
+            <div class="languages">
+              <i class="devicon-react-plain colored"></i>
+              <i class="devicon-tailwindcss-plain colored"></i>
+            </div>
+
+            <div class="live-code">
+              <button><a href="https://github.com/Beela303/inventory-dashboard/" target="_blank"
+                  rel="noopener noreferrer">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="left">
             <img src="../assets/website assets/Space Tourism HomePage.png" alt="Space Tourism Homepage">
           </div>
 
@@ -285,7 +311,7 @@ const fullstackSection = ref(true)
           </div>
         </div>
 
-        <!--<div class="project">
+        <div class="project">
           <div class="left">
             <img src="../assets/website assets/Queen Beela v2 blogs.jpg" alt="Queen Beela v2 Blogs page">
           </div>
@@ -297,7 +323,6 @@ const fullstackSection = ref(true)
             <div class="languages">
               <i class="devicon-vuejs-plain colored"></i>
               <i class="devicon-sass-plain colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
             </div>
 
             <div class="live-code">
@@ -307,7 +332,7 @@ const fullstackSection = ref(true)
                   rel="noopener noreferrer">GitHub</a></button>
             </div>
           </div>
-        </div>-->
+        </div>
 
         <div class="project">
           <div class="left">
@@ -333,7 +358,7 @@ const fullstackSection = ref(true)
           </div>
         </div>
 
-        <!--<div class="project">
+        <div class="project">
           <div class="left">
             <img src="../assets/website assets/blog website - blog list.jpeg" alt="Blog website's blog list">
           </div>
@@ -355,9 +380,9 @@ const fullstackSection = ref(true)
                   rel="noopener noreferrer">GitHub</a></button>
             </div>
           </div>
-        </div>-->
+        </div>
 
-        <!--<div class="project">
+        <div class="project">
           <div class="left">
             <img src="../assets/website assets/e-commerce website - homepage.jpeg" alt="E-commerce website Homepage">
           </div>
@@ -429,7 +454,7 @@ const fullstackSection = ref(true)
                   rel="noopener noreferrer">GitHub</a></button>
             </div>
           </div>
-        </div>-->
+        </div>
       </div>
     </section>
 
@@ -457,8 +482,6 @@ const fullstackSection = ref(true)
               the permissions include Admin, Cashier and manager.
             </p>
             <div class="languages">
-              <i class="devicon-react-plain colored"></i>
-              <i class="devicon-tailwindcss-plain colored"></i>
               <i class="devicon-django-plain colored"></i>
               <i class="devicon-djangorest-plain colored"></i>
               <i class="devicon-postgresql-plain colored"></i>
@@ -703,7 +726,7 @@ const fullstackSection = ref(true)
   width: 90%;
   height: 90%;
 
-  box-shadow: inset 0 0 0 15px var(--purple-color);
+  box-shadow: inset 0 0 0 8px var(--purple-color);
   /*box-shadow: inset 0 0 0 15px var(--purple-color);*/
   border-radius: 45px;
 
@@ -756,8 +779,8 @@ const fullstackSection = ref(true)
 
     .left {
       img {
-        width: 70%;
-        height: 70%;
+        width: 90%;
+        height: 90%;
 
         border-radius: 30px;
         object-fit: cover;
@@ -1028,9 +1051,12 @@ const fullstackSection = ref(true)
         //background-color: var(--pastel-color-1);
 
         margin: 10px;
-        padding: 5px;
+        padding: 15px;
 
-        border: 1px solid var(--text-color);
+        border: 1px dashed var(--text-color);
+        border-radius: 25px;
+
+        transition: var(--transition);
 
         a {
           color: var(--text-color);
@@ -1039,10 +1065,27 @@ const fullstackSection = ref(true)
             font-size: 4rem;
           }
         }
+
+        &:hover {
+          padding: 10px;
+        }
       }
     }
   }
 
+}
+
+@media screen and (min-width: 769px) {
+  .section {
+    .division {
+     .left {
+        img {
+          width: 90%;
+          height: 50%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1051,7 +1094,20 @@ const fullstackSection = ref(true)
   }
 
   .section {
+    box-shadow: inset 0 0 0 10px var(--purple-color);
 
+    .top {
+      height: 10vh;
+      padding: 20px 50px;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+    }
     // ABOUT SECTION
     .division {
       padding-top: 20px;
@@ -1063,11 +1119,10 @@ const fullstackSection = ref(true)
       }
 
       .left {
-        img {
-          margin-left: 25%;
+        img {          
+          width: 100%;
+          height: 50vh !important;
 
-          width: 50%;
-          height: 50%;
           justify-self: center !important;
         }
       }
@@ -1080,94 +1135,245 @@ const fullstackSection = ref(true)
         }
       }
     }
-  }
-
-  // TECH STACK SECTION
-  #tech-stack {
-    ul {
-      grid-template-columns: 1fr 1fr 1fr !important;
-    }
-  }
-
-  // PROJECT SECTION
-  .projects {
-    .project {
-      width: 90% !important;
-      height: 90vh !important;
-      display: grid !important;
-
-      .left {
-        width: 100% !important;
-
-        img {
-          width: 100% !important;
-          height: 30vh !important;
-        }
+    
+    // EXPERIENCE SECTION
+    #experiences {
+      padding: 5px 10px !important;
+      
+      .experience {
+        margin: 10px !important;
+        padding: 10px !important;
       }
-
-      .right {
-        width: 100% !important;
-        padding: 0 !important;
-
-        h2 {
-          margin-bottom: 5px !important;
+    }
+    
+    // TECH STACK SECTION
+    #tech-stack {
+      ul {
+        grid-template-columns: 1fr 1fr 1fr !important;
+      }
+    }
+    
+    // PROJECT SECTION
+    .projects {
+      .project {
+        width: 90% !important;
+        height: 90vh !important;
+        display: grid !important;
+        
+        .left {
+          width: 100% !important;
+          
+          img {
+            width: 100% !important;
+            height: 30vh !important;
+          }
         }
-
-        .desc {
-          font-size: 1rem !important;
-        }
-
-        .languages {
-          margin: 5px !important;
-
-          i {
-            font-size: 2rem !important;
+        
+        .right {
+          width: 100% !important;
+          padding: 0 !important;
+          
+          h2 {
+            margin-bottom: 5px !important;
+          }
+          
+          .desc {
+            font-size: 1.5rem !important;
+          }
+          
+          .languages {
+            margin: 5px !important;
+            
+            i {
+              font-size: 3rem !important;
+            }
+          }
+    
+          .live-code {
+            button {
+              font-size: 1.5rem;
+              height: 40px;
+            }
           }
         }
       }
     }
-  }
-
-  // CONTACT SECTION  
-  /*#contact-form {
-    justify-content: left;
-    display: block;
-
-    form {
-      width: 90vw;
-      margin: 0;
-      margin-bottom: 12vh;
-
-      label {
-        font-size: 1.3rem;
-      }
-
-      input {
-        height: 35px;
+    
+    // CONTACT SECTION  
+    #contact-form {
+      justify-content: left;
+      display: block;
+      
+      form {
+        width: 80vw !important;
+        margin: 0;
+        margin-left: 5.3vw;
+        margin-bottom: 12vh;
+        
+        label {
+          font-size: 1.3rem;
+        }
+          
+        input {
+          height: 35px;
+        }
       }
     }
-  }*/
-
-  // SOCIALS
-  #socials {
-    ul {
-      grid-template-columns: repeat(2, 200px) !important;
+            
+    // SOCIALS
+    #socials {
+      ul {
+        grid-template-columns: repeat(2, 200px) !important;
+      }
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-
   // TECH STACK SECTION
   #tech-stack {
+    padding: 15px;
+
     ul {
       grid-template-columns: 1fr 1fr !important;
-
+      gap: 10px;
+      
       li {
         margin: 0;
       }
     }
   }
+}
+
+@media screen and (max-width: 500px) {
+  #navigations {
+    grid-template-columns: repeat(2, 170px);
+  }
+
+  .section {
+    box-shadow: inset 0 0 0 7px var(--purple-color);
+
+    .top {
+      height: 8vh;
+      padding: 20px 50px;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      span {
+        font-size: 1.8rem;
+      }
+    }
+    
+    // TECH STACK SECTION
+    #tech-stack {
+      ul {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    // PROJECTS
+    #projects-tab {
+      padding-top: 15px;
+      display: block;
+
+      button {
+        width: 90%;
+        height: 10vh;
+        margin-left: 5%;
+
+        margin-bottom: 50px;
+      }
+    }
+
+        // PROJECT SECTION
+    .projects {
+      .project {
+        
+        .right {
+          .desc {
+            font-size: 1.2rem !important;
+          }
+          
+          .languages {
+            i {
+              font-size: 2.5rem !important;
+            }
+          }
+    
+          .live-code {
+            button {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    // SOCIALS
+    #socials {
+      ul {
+        grid-template-columns: repeat(2, 170px) !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  // SOCIALS
+  #socials {
+    ul {
+      grid-template-columns: repeat(2, 100px) !important;
+      grid-gap: 5px;
+
+      li {
+        a {
+          i {
+            font-size: 3rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #navigations {
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 10px;
+
+    .nav {
+      width: 120px;
+      height: 120px;
+
+      margin-bottom: 50px;
+
+      img {
+        width: 120px;
+        height: 120px;
+        }
+
+    }
+  }
+  
+  .section {
+    box-shadow: inset 0 0 0 5px var(--purple-color);
+
+    .top {
+      height: 8vh;
+      padding: 10px 30px;
+
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      span {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
 }
 
 /*@media screen and (max-width: 400px) {

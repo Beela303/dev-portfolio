@@ -1381,26 +1381,30 @@ const fullstackSection = ref(false)
     .projects {
       .project { 
         .right {
+          h2 {
+            font-size: 1.3rem;
+          }
+
           .desc {
-            font-size: 1.1rem !important;
+            font-size: 1rem !important;
           }
           
           .languages {
             i {
-              font-size: 2rem !important;
+              font-size: 1.3rem !important;
             }
           }
     
           .live-code {
             button {
-              font-size: 1rem;
+              font-size: 0.8rem;
+              height: 25px !important;
             }
           }
         }
       }
     }
   }
-
 }
 
 /*@media screen and (max-width: 400px) {

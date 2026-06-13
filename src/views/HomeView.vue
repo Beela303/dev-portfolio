@@ -16,7 +16,7 @@ const fullstackSection = ref(false)
 
 <template>
   <div id="intro">
-    <h1>Welcome to the Portf<span class="highlight-text">lioVe</span>rse</h1>
+    <h1>Welcome to the Portfolio<span class="highlight-text">Verse</span></h1>
     <h2><span class="highlight-text">Nabila's</span> Version</h2>
   </div>
 
@@ -188,9 +188,9 @@ const fullstackSection = ref(false)
       <hr>
 
       <div id="projects-tab">
-        <button class="project-tab" :disabled="frontendSection" @click="frontendSection = false">Frontend</button>
-        <button class="project-tab" :disabled="backendSection" @click="backendSection = false">Backend</button>
-        <button class="project-tab" :disabled="fullstackSection" @click="fullstackSection = false">Full Stack</button>
+        <button class="project-tab" :disabled="frontendSection" @click="frontendSection = true">Frontend</button>
+        <button class="project-tab" :disabled="backendSection" @click="backendSection = true">Backend</button>
+        <button class="project-tab" :disabled="fullstackSection" @click="fullstackSection = true">Full Stack</button>
       </div>
     </section>
 

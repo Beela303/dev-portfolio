@@ -1,22 +1,22 @@
 <script setup>
 import { ref } from 'vue';
 
-const aboutSection = ref(true)
-const techStackSection = ref(true)
-const experienceSection = ref(true)
-const projectsSection = ref(true)
-const contactSection = ref(true)
-const socialsSection = ref(true)
+const aboutSection = ref(false)
+const techStackSection = ref(false)
+const experienceSection = ref(false)
+const projectsSection = ref(false)
+const contactSection = ref(false)
+const socialsSection = ref(false)
 
-const frontendSection = ref(true)
-const backendSection = ref(true)
-const fullstackSection = ref(true)
+const frontendSection = ref(false)
+const backendSection = ref(false)
+const fullstackSection = ref(false)
 
 </script>
 
 <template>
   <div id="intro">
-    <h1>Welcome to the <span class="highlight-text">PortfolioVerse</span></h1>
+    <h1>Welcome to the Portf<span class="highlight-text">lioVe</span>rse</h1>
     <h2><span class="highlight-text">Nabila's</span> Version</h2>
   </div>
 
@@ -188,9 +188,9 @@ const fullstackSection = ref(true)
       <hr>
 
       <div id="projects-tab">
-        <button class="project-tab" :disabled="frontendSection" @click="frontendSection = true">Frontend</button>
-        <button class="project-tab" :disabled="backendSection" @click="backendSection = true">Backend</button>
-        <button class="project-tab" :disabled="fullstackSection" @click="fullstackSection = true">Full Stack</button>
+        <button class="project-tab" :disabled="frontendSection" @click="frontendSection = false">Frontend</button>
+        <button class="project-tab" :disabled="backendSection" @click="backendSection = false">Backend</button>
+        <button class="project-tab" :disabled="fullstackSection" @click="fullstackSection = false">Full Stack</button>
       </div>
     </section>
 
@@ -551,7 +551,7 @@ const fullstackSection = ref(true)
           <input type="text" name="_honey" style="display:none" />
 
           <!--Disable initial captcha-->
-          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_captcha" value="true" />
 
           <!--Custom response-->
           <input type="hidden" name="_autoresponse"
@@ -1243,6 +1243,11 @@ const fullstackSection = ref(true)
       }
     }
   }
+
+  // CONTACT SECTION  
+  #contact-form {
+    padding-top: 30px !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1281,13 +1286,13 @@ const fullstackSection = ref(true)
       button {
         width: 90%;
         height: 10vh;
-        margin-left: 5%;
+        margin-left: 6%;
 
         margin-bottom: 50px;
       }
     }
 
-        // PROJECT SECTION
+    // PROJECT SECTION
     .projects {
       .project {
         
@@ -1352,8 +1357,7 @@ const fullstackSection = ref(true)
       img {
         width: 120px;
         height: 120px;
-        }
-
+      }
     }
   }
   
@@ -1370,6 +1374,29 @@ const fullstackSection = ref(true)
 
       span {
         font-size: 1.6rem;
+      }
+    }
+
+    // PROJECT SECTION
+    .projects {
+      .project { 
+        .right {
+          .desc {
+            font-size: 1.1rem !important;
+          }
+          
+          .languages {
+            i {
+              font-size: 2rem !important;
+            }
+          }
+    
+          .live-code {
+            button {
+              font-size: 1rem;
+            }
+          }
+        }
       }
     }
   }

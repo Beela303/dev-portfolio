@@ -23,7 +23,7 @@
                 </li>
 
                 <li>
-                    <a href="https://beela303.blogspot.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:nabilaabubakar333@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-envelope"></i>
                         <!--<p>Email</p>-->
                     </a>

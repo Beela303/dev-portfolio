@@ -6,10 +6,10 @@ import ScrollToTop from './components/ScrollToTop.vue';
 </script>
 
 <template>
-  <Menu />
+  <!--<Menu />-->
   <RouterView />
-  <ScrollToTop />
-  <Footer />
+  <!--<ScrollToTop />
+  <Footer />-->
 </template>
 
 <style lang="scss">
@@ -34,6 +34,8 @@ import ScrollToTop from './components/ScrollToTop.vue';
   --main-gradient: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   --purple-color: #a166ab;
   --purple-color-2: #330a3b;
+
+  --transition: 2s;
 }
 
 * {
@@ -49,7 +51,7 @@ body {
   color: var(--text-color);
   background: var(--dark-color-2);
 
-  margin: 30px;
+  //margin: 30px;
 
   /*font-family: "Bitcount Prop Single", system-ui;
   font-optical-sizing: auto;
@@ -89,6 +91,58 @@ li {
   body {
     margin: 15px;
   }
+}
+
+/*========================== SCROLL BAR =============================*/
+/*
+/*width*
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/*track*
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+
+    border-radius: 25px;
+}
+
+/*handle*
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+*/
+/*width*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/*track*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/*handle*/
+::-webkit-scrollbar-thumb {
+  /*background: var(--linear-gradient);*/
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /*background: var(--linear-gradient-hover);*/
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /*========================== ICONS =============================*/
@@ -224,5 +278,4 @@ li {
 .fa-x-twitter {
   color: #1da1f2;
 }
-
 </style>

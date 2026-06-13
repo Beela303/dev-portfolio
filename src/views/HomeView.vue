@@ -1344,6 +1344,10 @@ const fullstackSection = ref(false)
 }
 
 @media screen and (max-width: 350px) {
+  #intro {
+    margin: 2rem;
+  }
+
   #navigations {
     grid-template-columns: repeat(2, 150px);
     grid-gap: 10px;
@@ -1389,21 +1393,27 @@ const fullstackSection = ref(false)
             font-size: 1rem !important;
           }
           
-          .languages {
+          /*.languages {
             i {
               font-size: 1.3rem !important;
             }
-          }
+          }*/
     
           .live-code {
             button {
-              font-size: 0.8rem;
+              font-size: 1rem;
               height: 25px !important;
             }
           }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #intro {
+    margin: 1rem;
   }
 }
 

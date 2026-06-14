@@ -210,13 +210,14 @@ const fullstackSection = ref(false)
 
           <div class="right">
             <h2>Smart Results Viewer</h2>
-            <p class="desc">This is my final project for my frontend internship.
-              It features the HomePage, Student Directory and Student data. It's functionality includes search results
-              by name, course or index number
+            <p class="desc">Final project for my frontend internship.
+              It features the HomePage, Student Directory and Student data. 
+              It's functionality includes search results by name, course or index number,
               downloadable summary, performance graphs and more.
               The JSON file is hosted on <a href="https://smart-results-viewer.onrender.com/students/" target="_blank"
                 rel="noopener noreferrer">
-                Render</a> and the frontend on Netlify.
+                Render</a> and the frontend on <a href="https://smart-results-viewer-nabila.netlify.app/" target="_blank"
+                  rel="noopener noreferrer">Netlify</a>.
             </p>
             <div class="languages">
               <i class="devicon-react-plain colored"></i>
@@ -243,10 +244,8 @@ const fullstackSection = ref(false)
             <h2>
               Inventory Dashboard
             </h2>
-            <p class="desc">This is a full stack inventory dashboard with an accounts, inventory and sales app
-              it features products, category, stocks, stock management, sales and low stock. A user can only perform
-              tasks added by the Super Admin,
-              the permissions include Admin, Cashier and manager.
+            <p class="desc">An Inventory Dashboard which features products, categories, stocks,
+               stock management, sales, low stock and their equivalent add pages and information pages.
             </p>
             <div class="languages">
               <i class="devicon-react-plain colored"></i>
@@ -476,10 +475,8 @@ const fullstackSection = ref(false)
             <h2>
               Inventory Dashboard
             </h2>
-            <p class="desc">This is a full stack inventory dashboard with an accounts, inventory and sales app
-              it features products, category, stocks, stock management, sales and low stock. A user can only perform
-              tasks added by the Super Admin,
-              the permissions include Admin, Cashier and manager.
+            <p class="desc">This is an inventory dashboard with an accounts, inventory and sales app.
+              it features products, categories, stocks, stock management, sales and low stock with appropriate permissions.
             </p>
             <div class="languages">
               <i class="devicon-django-plain"></i>
@@ -514,10 +511,9 @@ const fullstackSection = ref(false)
             <h2>
               Inventory Dashboard
             </h2>
-            <p class="desc">This is a full stack inventory dashboard with an accounts, inventory and sales app
-              it features products, category, stocks, stock management, sales and low stock. A user can only perform
-              tasks added by the Super Admin,
-              the permissions include Admin, Cashier and manager.
+            <p class="desc">This is a full stack inventory dashboard with an accounts, inventory and sales app.
+              it features products, category, stocks, stock management, sales and low stock with related
+             permissions.
             </p>
             <div class="languages">
               <i class="devicon-react-plain colored"></i>

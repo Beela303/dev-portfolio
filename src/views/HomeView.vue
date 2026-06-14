@@ -211,7 +211,6 @@ const fullstackSection = ref(false)
           <div class="right">
             <h2>Smart Results Viewer</h2>
             <p class="desc">Final project for my frontend internship.
-              It features the HomePage, Student Directory and Student data. 
               It's functionality includes search results by name, course or index number,
               downloadable summary, performance graphs and more.
               The JSON file is hosted on <a href="https://smart-results-viewer.onrender.com/students/" target="_blank"

@@ -112,8 +112,8 @@ const fullstackSection = ref(false)
         <h3>BACKEND</h3>
         <div class="stack">
           <ul>
-            <li><i class="devicon-django-plain colored"></i>Django</li>
-            <li><i class="devicon-djangorest-plain colored"></i>DRF</li>
+            <li><i class="devicon-django-plain"></i>Django</li>
+            <li><i class="devicon-djangorest-plain"></i>DRF</li>
             <li><i class="devicon-graphql-plain colored"></i>GraphQL</li>
             <li><i class="devicon-postgresql-plain colored"></i>PostgreSQL</li>
             <!--<li><i class="devicon-mysql-plain colored"></i>MySQL</li>-->
@@ -482,8 +482,8 @@ const fullstackSection = ref(false)
               the permissions include Admin, Cashier and manager.
             </p>
             <div class="languages">
-              <i class="devicon-django-plain colored"></i>
-              <i class="devicon-djangorest-plain colored"></i>
+              <i class="devicon-django-plain"></i>
+              <i class="devicon-djangorest-plain"></i>
               <i class="devicon-postgresql-plain colored"></i>
             </div>
 
@@ -522,8 +522,8 @@ const fullstackSection = ref(false)
             <div class="languages">
               <i class="devicon-react-plain colored"></i>
               <i class="devicon-tailwindcss-plain colored"></i>
-              <i class="devicon-django-plain colored"></i>
-              <i class="devicon-djangorest-plain colored"></i>
+              <i class="devicon-django-plain"></i>
+              <i class="devicon-djangorest-plain"></i>
               <i class="devicon-postgresql-plain colored"></i>
             </div>
 
@@ -1406,6 +1406,20 @@ const fullstackSection = ref(false)
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .section {
+  // PROJECT SECTION
+    .projects {
+      .project { 
+        width: 95% !important;
+        padding: 10px;
+        margin: 10px;
+
       }
     }
   }

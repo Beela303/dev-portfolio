@@ -131,10 +131,11 @@ const fullstackSection = ref(false)
         <h3>DEVOPS & INFRASTRUCTURE</h3>
         <div class="stack">
           <ul>
-            <li><i class="devicon-vercel-plain colored"></i>Vercel</li>
+            <li><i class="devicon-vercel-plain"></i>Vercel</li>
             <li><i class="devicon-cloudflare-plain colored"></i>Cloudflare</li>
-            <li><i class="devicon-netlify-plain colored"></i>Netlify</li>
-            <li><i class="devicon-render-plain colored"></i>Render</li>
+            <li><i class="devicon-netlify-plain"></i>Netlify</li>
+            <!--<li><i class="devicon-render-plain colored"></i>Render</li>-->
+            <li>Render</li>
           </ul>
         </div>
 

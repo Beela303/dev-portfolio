@@ -40,12 +40,12 @@ const categories = ['All', 'Frontend', 'Backend'];
 const selectedCategory = ref('All');
 
 const filteredJobs = computed(() => {
-    const reversedList = [...experiences.value].reverse();
+  const reversedList = [...experiences.value].reverse();
 
-    if (selectedCategory.value === 'All') {
-        return reversedList;
-    }
-    return reversedList.filter(job => job.category === selectedCategory.value);
+  if (selectedCategory.value === 'All') {
+    return reversedList;
+  }
+  return reversedList.filter(job => job.category === selectedCategory.value);
 });
 
 </script>
@@ -54,8 +54,8 @@ const filteredJobs = computed(() => {
   <div id="intro">
     <h1>Welcome to the Portfolio<span class="highlight-text">Verse</span></h1>
     <h2><span class="highlight-text">
-      <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer">
-        Nabila's</a>
+        <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer">
+          Nabila's</a>
       </span> Version</h2>
   </div>
 
@@ -226,35 +226,35 @@ const filteredJobs = computed(() => {
       <div class="experience-page">
         <!-- Category Tags Navigation -->
         <div class="categories">
-            <button v-for="category in categories" :key="category"
-                :class="['tag', { active: selectedCategory === category }]" @click="selectedCategory = category">
-                {{ category }}
-            </button>
+          <button v-for="category in categories" :key="category"
+            :class="['tag', { active: selectedCategory === category }]" @click="selectedCategory = category">
+            {{ category }}
+          </button>
         </div>
 
         <!-- Timeline Wrapper -->
         <div class="timeline">
-            <!-- TransitionGroup enables fluid shuffling/filtering animations -->
-            <TransitionGroup name="timeline-list">
-                <div v-for="(job, index) in filteredJobs" :key="job.id" class="timeline-item">
-                    <!-- Dynamic Font Awesome Icon replaces standard dot -->
-                    <div class="timeline-dot-icon">
-                        <i :class="['fas', job.icon]"></i>
-                    </div>
+          <!-- TransitionGroup enables fluid shuffling/filtering animations -->
+          <TransitionGroup name="timeline-list">
+            <div v-for="(job, index) in filteredJobs" :key="job.id" class="timeline-item">
+              <!-- Dynamic Font Awesome Icon replaces standard dot -->
+              <div class="timeline-dot-icon">
+                <i :class="['fas', job.icon]"></i>
+              </div>
 
-                    <div class="timeline-content">
-                        <h3>{{ job.role }}</h3>
-                        <h4>{{ job.company }}</h4>
-                        <p class="date">{{ job.dates }}</p>
-                        <p class="description">{{ job.description }}</p>
-                        <div class="job-tags">
-                            <span v-for="tag in job.tags" :key="tag" class="job-tag">{{ tag }}</span>
-                        </div>
-                    </div>
+              <div class="timeline-content">
+                <h3>{{ job.role }}</h3>
+                <h4>{{ job.company }}</h4>
+                <p class="date">{{ job.dates }}</p>
+                <p class="description">{{ job.description }}</p>
+                <div class="job-tags">
+                  <span v-for="tag in job.tags" :key="tag" class="job-tag">{{ tag }}</span>
                 </div>
-            </TransitionGroup>
+              </div>
+            </div>
+          </TransitionGroup>
         </div>
-    </div>
+      </div>
     </section>
 
     <!--PROJECTS SECTION-->
@@ -294,8 +294,8 @@ const filteredJobs = computed(() => {
               downloadable summary, performance graphs and more.
               The JSON file is hosted on <a href="https://smart-results-viewer.onrender.com/students/" target="_blank"
                 rel="noopener noreferrer">
-                Render</a> and the frontend on <a href="https://smart-results-viewer-nabila.netlify.app/" target="_blank"
-                  rel="noopener noreferrer">Netlify</a>.
+                Render</a> and the frontend on <a href="https://smart-results-viewer-nabila.netlify.app/"
+                target="_blank" rel="noopener noreferrer">Netlify</a>.
             </p>
             <div class="languages">
               <i class="devicon-react-plain colored"></i>
@@ -323,7 +323,7 @@ const filteredJobs = computed(() => {
               Inventory Dashboard
             </h2>
             <p class="desc">An Inventory Dashboard which features products, categories, stocks,
-               stock management, sales, low stock and their equivalent add pages and information pages.
+              stock management, sales, low stock and their equivalent add pages and information pages.
             </p>
             <div class="languages">
               <i class="devicon-react-plain colored"></i>
@@ -392,10 +392,11 @@ const filteredJobs = computed(() => {
           <div class="left">
             <img src="../assets/website assets/Queen Beela v2 blogs.jpg" alt="Queen Beela v2 Blogs page">
           </div>
-          
+
           <div class="right">
             <h2>Queen Beela v2 (Personal Website)</h2>
-            <p class="desc">This is my personal website which has pages for my blog, homepage, podcast, portfolio, gallery and
+            <p class="desc">This is my personal website which has pages for my blog, homepage, podcast, portfolio,
+              gallery and
               socials.</p>
             <div class="languages">
               <i class="devicon-vuejs-plain colored"></i>
@@ -439,7 +440,7 @@ const filteredJobs = computed(() => {
           <div class="left">
             <img src="../assets/website assets/blog website - blog list.jpeg" alt="Blog website's blog list">
           </div>
-          
+
           <div class="right">
             <h2>Blog Website</h2>
             <p class="desc">A blog website for a content creator with a light & dark theme, home page and blog page.</p>
@@ -463,10 +464,11 @@ const filteredJobs = computed(() => {
           <div class="left">
             <img src="../assets/website assets/e-commerce website - homepage.jpeg" alt="E-commerce website Homepage">
           </div>
-          
+
           <div class="right">
             <h2>E-commerce Website</h2>
-            <p class="desc">This is an e-commerce website showcasing the home page, products, account, about, contact and cart
+            <p class="desc">This is an e-commerce website showcasing the home page, products, account, about, contact
+              and cart
               pages.</p>
             <div class="languages">
               <i class="devicon-html5-plain colored"></i>
@@ -476,7 +478,8 @@ const filteredJobs = computed(() => {
             </div>
 
             <div class="live-code">
-              <button><a href="https://beela303.github.io/e-commerce-website" target="_blank" rel="noopener noreferrer">Live
+              <button><a href="https://beela303.github.io/e-commerce-website" target="_blank"
+                  rel="noopener noreferrer">Live
                   Demo</a></button>
               <button><a href="https://github.com/Beela303/e-commerce-website" target="_blank"
                   rel="noopener noreferrer">GitHub</a></button>
@@ -488,10 +491,11 @@ const filteredJobs = computed(() => {
           <div class="left">
             <img src="../assets/website assets/Queen Beela v1 gallery.jpg" alt="Queen Beela v1 Gallery page">
           </div>
-          
+
           <div class="right">
             <h2>Queen Beela v1 (Personal Website)</h2>
-            <p class="desc">This was my personal website which has pages for my blog, homepage, podcast, portfolio, gallery and
+            <p class="desc">This was my personal website which has pages for my blog, homepage, podcast, portfolio,
+              gallery and
               socials.</p>
             <div class="languages">
               <i class="devicon-html5-plain colored"></i>
@@ -513,7 +517,7 @@ const filteredJobs = computed(() => {
           <div class="left">
             <img src="../assets/website assets/Company website - services.jpeg" alt="Company website services page">
           </div>
-          
+
           <div class="right">
             <h2>Company Website</h2>
             <p class="desc">A single page website for a company using HTML, CSS and JavaScript.</p>
@@ -525,7 +529,8 @@ const filteredJobs = computed(() => {
             </div>
 
             <div class="live-code">
-              <button><a href="https://beela303.github.io/Company-website/" target="_blank" rel="noopener noreferrer">Live
+              <button><a href="https://beela303.github.io/Company-website/" target="_blank"
+                  rel="noopener noreferrer">Live
                   Demo</a></button>
               <button><a href="https://github.com/Beela303/company-website/" target="_blank"
                   rel="noopener noreferrer">GitHub</a></button>
@@ -554,7 +559,8 @@ const filteredJobs = computed(() => {
               Inventory Dashboard
             </h2>
             <p class="desc">This is an inventory dashboard with an accounts, inventory and sales app.
-              it features products, categories, stocks, stock management, sales and low stock with appropriate permissions.
+              it features products, categories, stocks, stock management, sales and low stock with appropriate
+              permissions.
             </p>
             <div class="languages">
               <i class="devicon-django-plain"></i>
@@ -591,7 +597,7 @@ const filteredJobs = computed(() => {
             </h2>
             <p class="desc">This is a full stack inventory dashboard with an accounts, inventory and sales app.
               it features products, category, stocks, stock management, sales and low stock with related
-             permissions.
+              permissions.
             </p>
             <div class="languages">
               <i class="devicon-react-plain colored"></i>
@@ -769,7 +775,7 @@ const filteredJobs = computed(() => {
 
     margin-bottom: 50px;
 
-    border: 1px dashed var(--pastel-color);
+    border: 1px dashed var(--purple-color);
     border-radius: 15px;
 
     text-align: center;
@@ -788,7 +794,7 @@ const filteredJobs = computed(() => {
 
     span {
       padding: 20px;
-      font-size: 4rem;
+      font-size: 3.5rem;
 
       transition: var(--transition);
     }
@@ -878,12 +884,12 @@ const filteredJobs = computed(() => {
     }
 
     .right {
-      font-size: 2rem;
+      font-size: 1.7rem;
 
       p {
         line-height: 70px;
         //color: var(--dark-color);
-        
+
         .answer {
           color: var(--text-color);
           transition: var(--transition);
@@ -904,7 +910,7 @@ const filteredJobs = computed(() => {
 
     h3 {
       margin-top: 15px;
-      
+
       &:first-child {
         margin-top: 0;
       }
@@ -916,7 +922,7 @@ const filteredJobs = computed(() => {
       gap: 20px;
 
       li {
-        background-color: var(--purple-color);
+        background-color: var(--dark-color);
         //background-color: var(--dark);
 
         height: 40px;
@@ -980,180 +986,180 @@ const filteredJobs = computed(() => {
 
     /* Category Filter Tags Style */
     .categories {
-        margin-bottom: 3.5rem;
-        gap: 12px;
+      margin-bottom: 3.5rem;
+      gap: 12px;
 
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
 
-        .tag {
-            color: #4b5563;
-            background: var(--text-color);
+      .tag {
+        color: #4b5563;
+        background: var(--text-color);
 
-            padding: 10px 20px;
+        padding: 10px 20px;
 
-            border: 1px solid #e5e7eb;
-            border-radius: 25px;
+        border: 1px solid #e5e7eb;
+        border-radius: 25px;
 
-            font-weight: 500;
+        font-weight: 500;
 
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
-            cursor: pointer;
+        cursor: pointer;
 
-            &.active,
-            &:hover {
-                color: var(--text-color);
-                background: var(--purple-color);
-                //background: var(--main-color);
+        &.active,
+        &:hover {
+          color: var(--text-color);
+          background: var(--purple-color);
+          //background: var(--main-color);
 
-                border-color: var(--pastel-color-2);
+          border-color: var(--pastel-color-2);
 
-                transform: translateY(-1px);
-                box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
-            }
+          transform: translateY(-1px);
+          box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
         }
+      }
     }
 
     /* Timeline Layout Base Line */
     .timeline {
-        margin-left: 1.5rem;
-        padding-left: 2.5rem;
+      margin-left: 1.5rem;
+      padding-left: 2.5rem;
 
-        border-left: 2px solid #e5e7eb;
+      border-left: 2px solid #e5e7eb;
+
+      position: relative;
+
+      .timeline-item {
+        background: var(--dark-color);
+        //background: var(--text-color);
+
+        margin-bottom: 2.5rem;
+        padding: 1.25rem;
+
+        border-radius: 8px;
+        border: 1px solid var(--pastel-color-2);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 
         position: relative;
 
-        .timeline-item {
-            background: var(--dark-color);
-            //background: var(--text-color);
+        .timeline-dot-icon {
+          color: var(--text-color);
+          background: var(--purple-color);
+          //background: var(--main-color);
 
-            margin-bottom: 2.5rem;
-            padding: 1.25rem;
+          left: -3.45rem;
+          top: 14px;
 
-            border-radius: 8px;
-            border: 1px solid var(--pastel-color-2);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
 
-            position: relative;
+          box-shadow: 0 0 0 4px #ffffff, 0 2px 4px rgba(0, 0, 0, 0.1);
 
-            .timeline-dot-icon {
-                color: var(--text-color);
-                background: var(--purple-color);
-                //background: var(--main-color);
+          font-size: 0.85rem;
 
-                left: -3.45rem;
-                top: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-                width: 28px;
-                height: 28px;
-                border-radius: 50%;
-
-                box-shadow: 0 0 0 4px #ffffff, 0 2px 4px rgba(0, 0, 0, 0.1);
-
-                font-size: 0.85rem;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                position: absolute;
-                z-index: 2;
-            }
-
-            .timeline-content {
-                color: var(--text-color);
-                background-color: var(--dark-color);
-
-                h3 {
-                    color: var(--text-color);
-                    //color: #111827;
-
-                    margin: 0;
-                    font-size: 1.25rem;
-                }
-
-                h4 {
-                    color: #b6b5af;
-                    //color: #4b5563;
-
-                    margin: 0.35rem 0 0;
-                    font-weight: 500;
-                }
-
-                .date {
-                    color: #c1cada;
-                    //color: #9ca3af;
-
-                    margin: 0.5rem 0 0.75rem;
-
-                    font-size: 0.85rem;
-                    font-weight: 500;
-                }
-
-                .description {
-                  color: #d5d9e0;
-                  //color: #374151;
-
-                  margin: 0;
-                  line-height: 1.5;
-                }
-
-                .job-tags {
-                    margin-top: 1rem;
-
-                    gap: 8px;
-
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    .job-tag {
-                        color: var(--text-color);
-                        background: var(--purple-color);
-
-                        //color: #4b5563;
-                        //background: var(--text-color);
-
-                        padding: 4px 10px;
-
-                        border-radius: 6px;
-                        border: 1px solid var(--pastel-color-2);
-
-                        font-weight: 500;
-                        font-size: 0.75rem;
-                    }
-                }
-            }
+          position: absolute;
+          z-index: 2;
         }
+
+        .timeline-content {
+          color: var(--text-color);
+          background-color: var(--dark-color);
+
+          h3 {
+            color: var(--text-color);
+            //color: #111827;
+
+            margin: 0;
+            font-size: 1.25rem;
+          }
+
+          h4 {
+            color: #b6b5af;
+            //color: #4b5563;
+
+            margin: 0.35rem 0 0;
+            font-weight: 500;
+          }
+
+          .date {
+            color: #c1cada;
+            //color: #9ca3af;
+
+            margin: 0.5rem 0 0.75rem;
+
+            font-size: 0.85rem;
+            font-weight: 500;
+          }
+
+          .description {
+            color: #d5d9e0;
+            //color: #374151;
+
+            margin: 0;
+            line-height: 1.5;
+          }
+
+          .job-tags {
+            margin-top: 1rem;
+
+            gap: 8px;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            .job-tag {
+              color: var(--text-color);
+              background: var(--purple-color);
+
+              //color: #4b5563;
+              //background: var(--text-color);
+
+              padding: 4px 10px;
+
+              border-radius: 6px;
+              border: 1px solid var(--pastel-color-2);
+
+              font-weight: 500;
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
     }
-}
+  }
 
-/* --- Vue TransitionGroup Classes --- */
+  /* --- Vue TransitionGroup Classes --- */
 
-/* Elements Entering and Leaving */
-.timeline-list-enter-active,
-.timeline-list-leave-active {
+  /* Elements Entering and Leaving */
+  .timeline-list-enter-active,
+  .timeline-list-leave-active {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-/* From State (Entering) / To State (Leaving) */
-.timeline-list-enter-from,
-.timeline-list-leave-to {
+  /* From State (Entering) / To State (Leaving) */
+  .timeline-list-enter-from,
+  .timeline-list-leave-to {
     opacity: 0;
     transform: translateX(-30px);
-}
+  }
 
-/* Absolute positioning during leave ensures smooth grid collapsing */
-.timeline-list-leave-active {
+  /* Absolute positioning during leave ensures smooth grid collapsing */
+  .timeline-list-leave-active {
     position: absolute;
     width: calc(100% - 2.5rem);
-}
+  }
 
-/* Smooth reordering layout movement (v-move) */
-.timeline-list-move {
+  /* Smooth reordering layout movement (v-move) */
+  .timeline-list-move {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
   // PROJECTS
   #projects-tab {
@@ -1169,16 +1175,15 @@ const filteredJobs = computed(() => {
 
     button {
       color: var(--text-color);
-      background: var(--purple-color);
+      background: var(--dark-color);
 
       width: 25vw;
       height: 25vh;
-      //width: 150px;
-      //height: 100px;
-
       margin-bottom: 30px;
 
       font-size: 1.5rem;
+
+      border: 1px dashed var(--pastel-color-2);
       border-radius: 30px;
 
       transition: var(--transition);
@@ -1362,13 +1367,13 @@ const filteredJobs = computed(() => {
       }
     }
   }*/
- 
-  #socials {
-  //columns: 3;
-  //column-gap: 200px;
 
-  padding: 30px;
-  //margin-bottom: 5vh;
+  #socials {
+    //columns: 3;
+    //column-gap: 200px;
+
+    padding: 30px;
+    //margin-bottom: 5vh;
 
     ul {
       display: grid;
@@ -1418,7 +1423,7 @@ const filteredJobs = computed(() => {
 @media screen and (min-width: 769px) {
   .section {
     .division {
-     .left {
+      .left {
         img {
           width: 30vw !important;
           height: 60vh !important;
@@ -1432,6 +1437,7 @@ const filteredJobs = computed(() => {
 
 @media screen and (max-width: 900px) {
   .section {
+
     // ABOUT SECTION
     .division {
       padding-top: 0;
@@ -1443,7 +1449,7 @@ const filteredJobs = computed(() => {
       }
 
       .left {
-        img {      
+        img {
           width: 50vw !important;
           height: 90vw !important;
           //width: 100%;
@@ -1484,60 +1490,60 @@ const filteredJobs = computed(() => {
         font-size: 2rem;
       }
     }
-    
+
     // EXPERIENCE SECTION
     #experiences {
       padding: 5px 10px !important;
-      
+
       .experience {
         margin: 10px !important;
         padding: 10px !important;
       }
     }
-    
+
     // TECH STACK SECTION
     #tech-stack {
       ul {
         grid-template-columns: 1fr 1fr 1fr !important;
       }
     }
-    
+
     // PROJECT SECTION
     .projects {
       .project {
         width: 90% !important;
         height: 90vh !important;
         display: grid !important;
-        
+
         .left {
           width: 100% !important;
-          
+
           img {
             width: 100% !important;
             height: 30vh !important;
           }
         }
-        
+
         .right {
           width: 100% !important;
           padding: 0 !important;
-          
+
           h2 {
             margin-bottom: 5px !important;
           }
-          
+
           .desc {
             font-size: 1.5rem !important;
           }
-          
+
           .languages {
             margin: 5px !important;
-            
+
             i {
               font-size: 3rem !important;
             }
           }
-    
+
           .live-code {
             button {
               font-size: 1.5rem;
@@ -1547,28 +1553,28 @@ const filteredJobs = computed(() => {
         }
       }
     }
-    
+
     // CONTACT SECTION  
     #contact-form {
       justify-content: left;
       display: block;
-      
+
       form {
         width: 80vw !important;
         margin: 0;
         margin-left: 5.3vw;
         margin-bottom: 12vh;
-        
+
         label {
           font-size: 1.3rem;
         }
-          
+
         input {
           height: 35px;
         }
       }
     }
-            
+
     // SOCIALS
     #socials {
       ul {
@@ -1581,23 +1587,24 @@ const filteredJobs = computed(() => {
 
 @media screen and (max-width: 600px) {
   .section {
+
     // TECH STACK SECTION
     #tech-stack {
       padding: 15px;
-      
+
       ul {
         grid-template-columns: 1fr 1fr !important;
         gap: 10px;
       }
     }
-    
-  // CONTACT SECTION  
-  #contact-form {
-    padding-top: 30px !important;
-  }
-  
-  // SOCIALS SECTION  
-  /*#socials {
+
+    // CONTACT SECTION  
+    #contact-form {
+      padding-top: 30px !important;
+    }
+
+    // SOCIALS SECTION  
+    /*#socials {
     grid-template-columns: 1fr 1fr !important;
     }*/
   }
@@ -1634,7 +1641,7 @@ const filteredJobs = computed(() => {
         height: 20vh;
         margin-left: 6%;
         margin-bottom: 50px;
-        
+
         font-size: 1.25rem;
       }
     }
@@ -1642,18 +1649,18 @@ const filteredJobs = computed(() => {
     // PROJECT SECTION
     .projects {
       .project {
-        
+
         .right {
           .desc {
             font-size: 1.2rem !important;
           }
-          
+
           .languages {
             i {
               font-size: 2.5rem !important;
             }
           }
-    
+
           .live-code {
             button {
               font-size: 1.2rem;
@@ -1669,13 +1676,57 @@ const filteredJobs = computed(() => {
         grid-template-columns: repeat(2, 170px) !important;
       }
     }*/
+
+
+    #socials {
+      ul {
+        li {
+          width: 7rem !important;
+          height: 13vh !important;
+          padding: 5px;
+
+          .fas,
+          .fa-brands {
+            font-size: 2.5rem;
+          }
+
+          a {
+            i {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
+@media screen and (max-width: 420px) {
+
+  // SOCIALS
+  #socials {
+    ul {
+      /*grid-template-columns: repeat(2, 100px) !important;
+      grid-gap: 5px;*/
+
+      li {
+        width: 5vw;
+        height: 7vh;
+
+        a {
+          i {
+            font-size: 2rem !important;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 400px) {
   .section {
-  // TECH STACK SECTION
+
+    // TECH STACK SECTION
     #tech-stack {
       ul {
         grid-template-columns: 1fr !important;
@@ -1686,45 +1737,11 @@ const filteredJobs = computed(() => {
   // TIMELINE EXPERIENCE
   .experience-page {
     .categories {
+      padding: 15px;
       overflow-x: scroll;
-    }
-  }
 
-  #socials {
-    ul {
-      li {
-        width: 7rem;
-        height: 13vh;
-        padding: 5px;
-
-        .fas,
-        .fa-brands {
-            font-size: 2.5rem;
-        }
-
-        a {
-          i {
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  // SOCIALS
-  #socials {
-    ul {
-      /*grid-template-columns: repeat(2, 100px) !important;
-      grid-gap: 5px;*/
-
-      li {
-        a {
-          i {
-            font-size: 3rem !important;
-          }
-        }
+      button:first-child {
+        margin-left: 50px;
       }
     }
   }
@@ -1749,9 +1766,13 @@ const filteredJobs = computed(() => {
         width: 120px;
         height: 120px;
       }
+
+      span {
+        font-size: 2.5rem;
+      }
     }
   }
-  
+
   .section {
     box-shadow: inset 0 0 0 5px var(--purple-color);
 
@@ -1768,9 +1789,20 @@ const filteredJobs = computed(() => {
       }
     }
 
+    // TIMELINE EXPERIENCE
+    .experience-page {
+      .categories {
+        padding: 10px;
+
+        button:first-child {
+          margin-left: 100px;
+        }
+      }
+    }
+
     // PROJECT SECTION
     .projects {
-      .project { 
+      .project {
         .right {
           h2 {
             font-size: 1.3rem;
@@ -1779,13 +1811,13 @@ const filteredJobs = computed(() => {
           .desc {
             font-size: 1rem !important;
           }
-          
+
           /*.languages {
             i {
               font-size: 1.3rem !important;
             }
           }*/
-    
+
           .live-code {
             button {
               font-size: 1rem;
@@ -1798,31 +1830,6 @@ const filteredJobs = computed(() => {
   }
 }
 
-/*
-@media screen and (max-width: 400px) {
-  #socials {
-    ul {
-      li {
-        width: 7rem;
-        height: 13vh;
-        padding: 5px;
-
-        .fas,
-        .fa-brands {
-            font-size: 2.5rem;
-        }
-
-        a {
-          i {
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
-  }
-}
-*/
-
 @media screen and (max-width: 330px) {
   #socials {
     grid-template-columns: 1fr !important;
@@ -1831,9 +1838,10 @@ const filteredJobs = computed(() => {
 
 @media screen and (max-width: 300px) {
   .section {
-  // PROJECT SECTION
+
+    // PROJECT SECTION
     .projects {
-      .project { 
+      .project {
         width: 95% !important;
         padding: 10px;
         margin: 10px;

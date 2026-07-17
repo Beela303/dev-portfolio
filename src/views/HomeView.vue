@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const aboutSection = ref(false)
 const techStackSection = ref(false)
@@ -12,42 +12,87 @@ const frontendSection = ref(false)
 const backendSection = ref(false)
 const fullstackSection = ref(false)
 
+
+const experiences = ref([
+  {
+    id: 1,
+    role: 'Frontend Developer Intern',
+    company: 'FexiSAF Edusoft Limited',
+    dates: 'January 2026 - April 2026',
+    description: 'Developing scalable web applications using React.',
+    category: 'Frontend',
+    icon: 'fa-code',
+    tags: ['React', 'JavaScript', 'HTML/CSS']
+  },
+  {
+    id: 2,
+    role: 'Backend Developer Intern',
+    company: 'FexiSAF Edusoft Limited',
+    dates: 'May 2026 - Present',
+    description: 'Developing scalable secure backend applications.',
+    category: 'Backend',
+    icon: 'fa-code',
+    tags: ['Java', 'Springboot']
+  },
+]);
+
+const categories = ['All', 'Frontend', 'Backend'];
+const selectedCategory = ref('All');
+
+const filteredJobs = computed(() => {
+    const reversedList = [...experiences.value].reverse();
+
+    if (selectedCategory.value === 'All') {
+        return reversedList;
+    }
+    return reversedList.filter(job => job.category === selectedCategory.value);
+});
+
 </script>
 
 <template>
   <div id="intro">
     <h1>Welcome to the Portfolio<span class="highlight-text">Verse</span></h1>
-    <h2><span class="highlight-text">Nabila's</span> Version</h2>
+    <h2><span class="highlight-text">
+      <a href="https://beela303.vercel.app/" target="_blank" rel="noopener noreferrer">
+        Nabila's</a>
+      </span> Version</h2>
   </div>
 
   <div id="navigations">
     <div class="nav" :disabled="aboutSection" @click="aboutSection = true">
-      <img src="../assets/icons/Treetog-Junior-Folder-fav.256.png" alt="About">
+      <!--<img src="../assets/icons/Treetog-Junior-Folder-fav.256.png" alt="About">-->
+      <span class="material-icons">person</span>
       <h2>About</h2>
     </div>
 
     <div class="nav" :disabled="techStackSection" @click="techStackSection = true">
-      <img src="../assets/icons/Franksouza183-Fs-Apps-konsole.512.png" alt="Tech Stack">
+      <!--<img src="../assets/icons/Franksouza183-Fs-Apps-konsole.512.png" alt="Tech Stack">-->
+      <span class="material-icons">layers</span>
       <h2>Tech Stack</h2>
     </div>
 
     <div class="nav" :disabled="experienceSection" @click="experienceSection = true">
-      <img src="../assets/icons/Anabellafalivene-Cute-Folders-Folder-Balloons.512.png" alt="Experience">
+      <!--<img src="../assets/icons/Anabellafalivene-Cute-Folders-Folder-Balloons.512.png" alt="Experience">-->
+      <span class="material-icons">business_center</span>
       <h2>Experience</h2>
     </div>
 
     <div class="nav" :disabled="projectsSection" @click="projectsSection = true">
-      <img src="../assets/icons/Franksouza183-Fs-Places-folder-black.512.png" alt="Projects">
+      <!--<img src="../assets/icons/Franksouza183-Fs-Places-folder-black.512.png" alt="Projects">-->
+      <span class="material-icons">work</span>
       <h2>Projects</h2>
     </div>
 
     <div class="nav" :disabled="contactSection" @click="contactSection = true">
-      <img src="../assets/icons/Uriy1966-Steel-System-Desktop.512.png" alt="Contact">
+      <!--<img src="../assets/icons/Uriy1966-Steel-System-Desktop.512.png" alt="Contact">-->
+      <span class="material-icons">email</span>
       <h2>Contact</h2>
     </div>
 
     <div class="nav" :disabled="socialsSection" @click="socialsSection = true">
-      <img src="../assets/icons/Franksouza183-Fs-Categories-applications-internet.512.png" alt="socials">
+      <!--<img src="../assets/icons/Franksouza183-Fs-Categories-applications-internet.512.png" alt="socials">-->
+      <span class="material-icons">tag</span>
       <h2>Socials</h2>
     </div>
   </div>
@@ -64,7 +109,7 @@ const fullstackSection = ref(false)
 
       <div class="division">
         <div class="left">
-          <img src="../assets/mypicture.jpg" alt="">
+          <img src="../assets/43.webp" alt="">
         </div>
 
         <div class="right">
@@ -162,7 +207,7 @@ const fullstackSection = ref(false)
 
       <hr>
 
-      <div id="experiences">
+      <!--<div id="experiences">
         <div class="experience">
           <span class="time">May 2026 - Present</span>
           <h3 class="title">Backend Developer Intern</h3>
@@ -176,7 +221,40 @@ const fullstackSection = ref(false)
           <h4><span class="framework">Language & Framework:</span> JavaScript, React</h4>
           <p class="company">FlexiSAF Edusoft Limited</p>
         </div>
-      </div>
+      </div>-->
+
+      <div class="experience-page">
+        <!-- Category Tags Navigation -->
+        <div class="categories">
+            <button v-for="category in categories" :key="category"
+                :class="['tag', { active: selectedCategory === category }]" @click="selectedCategory = category">
+                {{ category }}
+            </button>
+        </div>
+
+        <!-- Timeline Wrapper -->
+        <div class="timeline">
+            <!-- TransitionGroup enables fluid shuffling/filtering animations -->
+            <TransitionGroup name="timeline-list">
+                <div v-for="(job, index) in filteredJobs" :key="job.id" class="timeline-item">
+                    <!-- Dynamic Font Awesome Icon replaces standard dot -->
+                    <div class="timeline-dot-icon">
+                        <i :class="['fas', job.icon]"></i>
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>{{ job.role }}</h3>
+                        <h4>{{ job.company }}</h4>
+                        <p class="date">{{ job.dates }}</p>
+                        <p class="description">{{ job.description }}</p>
+                        <div class="job-tags">
+                            <span v-for="tag in job.tags" :key="tag" class="job-tag">{{ tag }}</span>
+                        </div>
+                    </div>
+                </div>
+            </TransitionGroup>
+        </div>
+    </div>
     </section>
 
     <!--PROJECTS SECTION-->
@@ -654,6 +732,10 @@ const fullstackSection = ref(false)
 <style lang="scss" scoped>
 .highlight-text {
   color: var(--purple-color);
+
+  a {
+    color: var(--purple-color);
+  }
 }
 
 #intro {
@@ -704,6 +786,13 @@ const fullstackSection = ref(false)
       transition: var(--transition);
     }
 
+    span {
+      padding: 20px;
+      font-size: 4rem;
+
+      transition: var(--transition);
+    }
+
     &:hover {
       border-radius: 30px;
 
@@ -729,7 +818,8 @@ const fullstackSection = ref(false)
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #160b17;
+  //background-color: rgba(255, 255, 255, 0.3);
 
   position: fixed;
   justify-self: center;
@@ -775,8 +865,12 @@ const fullstackSection = ref(false)
 
     .left {
       img {
-        width: 90%;
-        height: 90%;
+        width: 30vw !important;
+        height: 60vh !important;
+        //height: 90%;
+        //width: 90%;
+
+        rotate: 90deg;
 
         border-radius: 30px;
         object-fit: cover;
@@ -787,10 +881,11 @@ const fullstackSection = ref(false)
       font-size: 2rem;
 
       p {
-        line-height: 50px;
-
+        line-height: 70px;
+        //color: var(--dark-color);
+        
         .answer {
-          color: var(--dark-color);
+          color: var(--text-color);
           transition: var(--transition);
         }
 
@@ -807,16 +902,26 @@ const fullstackSection = ref(false)
     padding: 30px;
     padding-top: 0;
 
+    h3 {
+      margin-top: 15px;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
     ul {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 20px;
 
       li {
-        background-color: var(--dark);
+        background-color: var(--purple-color);
+        //background-color: var(--dark);
 
         height: 40px;
         margin: 10px;
+        margin-bottom: 0;
         padding: 5px;
 
         font-size: 1.5rem;
@@ -867,11 +972,196 @@ const fullstackSection = ref(false)
     }
   }
 
+  // TIMELINE EXPERIENCE
+  .experience-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    /* Category Filter Tags Style */
+    .categories {
+        margin-bottom: 3.5rem;
+        gap: 12px;
+
+        display: flex;
+        justify-content: center;
+
+        .tag {
+            color: #4b5563;
+            background: var(--text-color);
+
+            padding: 10px 20px;
+
+            border: 1px solid #e5e7eb;
+            border-radius: 25px;
+
+            font-weight: 500;
+
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+            cursor: pointer;
+
+            &.active,
+            &:hover {
+                color: var(--text-color);
+                background: var(--purple-color);
+                //background: var(--main-color);
+
+                border-color: var(--pastel-color-2);
+
+                transform: translateY(-1px);
+                box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+            }
+        }
+    }
+
+    /* Timeline Layout Base Line */
+    .timeline {
+        margin-left: 1.5rem;
+        padding-left: 2.5rem;
+
+        border-left: 2px solid #e5e7eb;
+
+        position: relative;
+
+        .timeline-item {
+            background: var(--dark-color);
+            //background: var(--text-color);
+
+            margin-bottom: 2.5rem;
+            padding: 1.25rem;
+
+            border-radius: 8px;
+            border: 1px solid var(--pastel-color-2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+            position: relative;
+
+            .timeline-dot-icon {
+                color: var(--text-color);
+                background: var(--purple-color);
+                //background: var(--main-color);
+
+                left: -3.45rem;
+                top: 14px;
+
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+
+                box-shadow: 0 0 0 4px #ffffff, 0 2px 4px rgba(0, 0, 0, 0.1);
+
+                font-size: 0.85rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: absolute;
+                z-index: 2;
+            }
+
+            .timeline-content {
+                color: var(--text-color);
+                background-color: var(--dark-color);
+
+                h3 {
+                    color: var(--text-color);
+                    //color: #111827;
+
+                    margin: 0;
+                    font-size: 1.25rem;
+                }
+
+                h4 {
+                    color: #b6b5af;
+                    //color: #4b5563;
+
+                    margin: 0.35rem 0 0;
+                    font-weight: 500;
+                }
+
+                .date {
+                    color: #c1cada;
+                    //color: #9ca3af;
+
+                    margin: 0.5rem 0 0.75rem;
+
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                }
+
+                .description {
+                  color: #d5d9e0;
+                  //color: #374151;
+
+                  margin: 0;
+                  line-height: 1.5;
+                }
+
+                .job-tags {
+                    margin-top: 1rem;
+
+                    gap: 8px;
+
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .job-tag {
+                        color: var(--text-color);
+                        background: var(--purple-color);
+
+                        //color: #4b5563;
+                        //background: var(--text-color);
+
+                        padding: 4px 10px;
+
+                        border-radius: 6px;
+                        border: 1px solid var(--pastel-color-2);
+
+                        font-weight: 500;
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --- Vue TransitionGroup Classes --- */
+
+/* Elements Entering and Leaving */
+.timeline-list-enter-active,
+.timeline-list-leave-active {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* From State (Entering) / To State (Leaving) */
+.timeline-list-enter-from,
+.timeline-list-leave-to {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+/* Absolute positioning during leave ensures smooth grid collapsing */
+.timeline-list-leave-active {
+    position: absolute;
+    width: calc(100% - 2.5rem);
+}
+
+/* Smooth reordering layout movement (v-move) */
+.timeline-list-move {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
   // PROJECTS
   #projects-tab {
+    margin-top: 50px;
     display: grid;
 
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: 1fr 1fr;
+    //grid-template-columns: repeat(2, 200px);
     grid-gap: 10px;
 
     place-content: center;
@@ -879,10 +1169,12 @@ const fullstackSection = ref(false)
 
     button {
       color: var(--text-color);
-      background: var(--dark);
+      background: var(--purple-color);
 
-      width: 150px;
-      height: 100px;
+      width: 25vw;
+      height: 25vh;
+      //width: 150px;
+      //height: 100px;
 
       margin-bottom: 30px;
 
@@ -900,7 +1192,7 @@ const fullstackSection = ref(false)
 
   .projects {
     .project {
-      background: var(--dark);
+      background: var(--dark-color);
 
       height: 60vh;
 
@@ -960,7 +1252,8 @@ const fullstackSection = ref(false)
               margin-left: 10px;
             }
 
-            background: var(--pastel-color);
+            background: var(--purple-color);
+            //background: var(--pastel-color);
 
             width: 45%;
             height: 30px;
@@ -983,7 +1276,8 @@ const fullstackSection = ref(false)
     justify-content: center !important;
 
     form {
-      background-color: var(--dark);
+      background-color: var(--dark-color);
+      //background-color: var(--dark);
 
       width: 50vw;
       padding: 25px;
@@ -1031,7 +1325,7 @@ const fullstackSection = ref(false)
   }
 
   // SOCIALS SECTION
-  #socials {
+  /*#socials {
     //background: var(--purple-color);
 
     ul {
@@ -1067,8 +1361,58 @@ const fullstackSection = ref(false)
         }
       }
     }
-  }
+  }*/
+ 
+  #socials {
+  //columns: 3;
+  //column-gap: 200px;
 
+  padding: 30px;
+  //margin-bottom: 5vh;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      //grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      place-items: center;
+
+      li {
+        background-color: var(--dark-color);
+
+        width: 10rem;
+        height: 15vh;
+
+        margin-bottom: 5%;
+
+        border-radius: 20px;
+        border: 1px solid var(--pastel-color-2);
+
+        text-align: center;
+
+        &:hover {
+          transform: var(--transform);
+          transition: var(--transition);
+        }
+
+        .fas,
+        .fa-brands {
+          font-size: 3rem;
+        }
+
+        a {
+          i {
+            color: var(--text-color); //#fffafa
+
+            font-size: 1.3rem;
+            text-decoration: none;
+
+            padding: 15px;
+            margin-bottom: 5vh;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1076,8 +1420,44 @@ const fullstackSection = ref(false)
     .division {
      .left {
         img {
-          width: 90%;
-          height: 50%;
+          width: 30vw !important;
+          height: 60vh !important;
+          //width: 90%;
+          //height: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section {
+    // ABOUT SECTION
+    .division {
+      padding-top: 0;
+      display: block;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        img {      
+          width: 50vw !important;
+          height: 90vw !important;
+          //width: 100%;
+          //height: 50vh !important;
+
+          justify-self: center !important;
+        }
+      }
+
+      .right {
+        font-size: 1.5rem;
+
+        p {
+          line-height: 50px;
         }
       }
     }
@@ -1102,33 +1482,6 @@ const fullstackSection = ref(false)
 
       span {
         font-size: 2rem;
-      }
-    }
-    // ABOUT SECTION
-    .division {
-      padding-top: 20px;
-      display: block;
-
-      .left,
-      .right {
-        width: 100%;
-      }
-
-      .left {
-        img {          
-          width: 100%;
-          height: 50vh !important;
-
-          justify-self: center !important;
-        }
-      }
-
-      .right {
-        font-size: 1.5rem;
-
-        p {
-          line-height: 50px;
-        }
       }
     }
     
@@ -1219,30 +1572,34 @@ const fullstackSection = ref(false)
     // SOCIALS
     #socials {
       ul {
-        grid-template-columns: repeat(2, 200px) !important;
+        grid-template-columns: 1fr 1fr;
+        //grid-template-columns: repeat(2, 200px) !important;
       }
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-  // TECH STACK SECTION
-  #tech-stack {
-    padding: 15px;
-
-    ul {
-      grid-template-columns: 1fr 1fr !important;
-      gap: 10px;
+  .section {
+    // TECH STACK SECTION
+    #tech-stack {
+      padding: 15px;
       
-      li {
-        margin: 0;
+      ul {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px;
       }
     }
-  }
-
+    
   // CONTACT SECTION  
   #contact-form {
     padding-top: 30px !important;
+  }
+  
+  // SOCIALS SECTION  
+  /*#socials {
+    grid-template-columns: 1fr 1fr !important;
+    }*/
   }
 }
 
@@ -1266,25 +1623,19 @@ const fullstackSection = ref(false)
         font-size: 1.8rem;
       }
     }
-    
-    // TECH STACK SECTION
-    #tech-stack {
-      ul {
-        grid-template-columns: 1fr !important;
-      }
-    }
 
     // PROJECTS
     #projects-tab {
       padding-top: 15px;
-      display: block;
+      //display: block;
 
       button {
-        width: 90%;
-        height: 10vh;
+        width: 30vw;
+        height: 20vh;
         margin-left: 6%;
-
         margin-bottom: 50px;
+        
+        font-size: 1.25rem;
       }
     }
 
@@ -1313,9 +1664,49 @@ const fullstackSection = ref(false)
     }
 
     // SOCIALS
-    #socials {
+    /*#socials {
       ul {
         grid-template-columns: repeat(2, 170px) !important;
+      }
+    }*/
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .section {
+  // TECH STACK SECTION
+    #tech-stack {
+      ul {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  }
+
+  // TIMELINE EXPERIENCE
+  .experience-page {
+    .categories {
+      overflow-x: scroll;
+    }
+  }
+
+  #socials {
+    ul {
+      li {
+        width: 7rem;
+        height: 13vh;
+        padding: 5px;
+
+        .fas,
+        .fa-brands {
+            font-size: 2.5rem;
+        }
+
+        a {
+          i {
+            font-size: 1.2rem;
+          }
+        }
       }
     }
   }
@@ -1325,8 +1716,8 @@ const fullstackSection = ref(false)
   // SOCIALS
   #socials {
     ul {
-      grid-template-columns: repeat(2, 100px) !important;
-      grid-gap: 5px;
+      /*grid-template-columns: repeat(2, 100px) !important;
+      grid-gap: 5px;*/
 
       li {
         a {
@@ -1407,6 +1798,37 @@ const fullstackSection = ref(false)
   }
 }
 
+/*
+@media screen and (max-width: 400px) {
+  #socials {
+    ul {
+      li {
+        width: 7rem;
+        height: 13vh;
+        padding: 5px;
+
+        .fas,
+        .fa-brands {
+            font-size: 2.5rem;
+        }
+
+        a {
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+*/
+
+@media screen and (max-width: 330px) {
+  #socials {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 @media screen and (max-width: 300px) {
   .section {
   // PROJECT SECTION
@@ -1415,7 +1837,6 @@ const fullstackSection = ref(false)
         width: 95% !important;
         padding: 10px;
         margin: 10px;
-
       }
     }
   }

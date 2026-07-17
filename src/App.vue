@@ -35,6 +35,8 @@ import ScrollToTop from './components/ScrollToTop.vue';
   --purple-color: #a166ab;
   --purple-color-2: #330a3b;
 
+  --exquisite-purple: #160b17;
+
   --transition: 2s;
 }
 
@@ -146,7 +148,7 @@ li {
 }
 
 /*========================== ICONS =============================*/
-.fa-instagram {
+/*.fa-instagram {
   color: var(--white);
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 
@@ -277,5 +279,5 @@ li {
 
 .fa-x-twitter {
   color: #1da1f2;
-}
+}*/
 </style>

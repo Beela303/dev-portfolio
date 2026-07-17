@@ -29,10 +29,10 @@ const experiences = ref([
     role: 'Backend Developer Intern',
     company: 'FexiSAF Edusoft Limited',
     dates: 'May 2026 - Present',
-    description: 'Developing scalable secure backend applications.',
+    description: 'Developing secure backend applications.',
     category: 'Backend',
     icon: 'fa-code',
-    tags: ['Java', 'Springboot']
+    tags: ['Java', 'Backend']
   },
 ]);
 
@@ -741,6 +741,12 @@ const filteredJobs = computed(() => {
 
   a {
     color: var(--purple-color);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--pastel-color-2);
+      transition: var(--transition);
+    }
   }
 }
 
@@ -780,6 +786,7 @@ const filteredJobs = computed(() => {
 
     text-align: center;
 
+    transition: var(--transition);
     cursor: pointer;
 
     img {
@@ -801,6 +808,7 @@ const filteredJobs = computed(() => {
 
     &:hover {
       border-radius: 30px;
+      transition: var(--transition);
 
       img {
         padding: 0;
